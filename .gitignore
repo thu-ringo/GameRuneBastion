@@ -1,0 +1,80 @@
+# Unity generated folders (keep source .meta files)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/.utmp/
+/ExportedObj/
+/.vs/
+/.idea/
+/.vscode/
+.gradle/
+
+# IDE-generated solution and project files
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports and exported builds
+/sysinfo.txt
+/crashlytics-build.properties
+*.apk
+*.aab
+*.unitypackage
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+
+# Local archives of previous projects; kept on disk
+/LegacyBackup/
+/W8Verification/
+
+# Python/backend runtime data and training caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+/Backend/data/
+/Training/data/
+/Training/datasets/
+/Training/.cache/
+
+# Local secrets (template files may be versioned)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.keystore
+*.jks
+*.p12
+*.pfx
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

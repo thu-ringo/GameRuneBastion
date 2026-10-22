@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8088:8088"
+    volumes:
+      - rune-data:/data
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  rune-data:

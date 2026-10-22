@@ -1,0 +1,3 @@
+PASS drawn gesture 0 predicted 0 confidence 1
+PASS drawn gesture 1 predicted 1 confidence 1
+PASS drawn gesture 2 predicted 2 confidence 1

@@ -1,0 +1,3 @@
+PASS ONNX class 0 numerical delta 9.05942E-14
+PASS ONNX class 1 numerical delta 9.298118E-16
+PASS ONNX class 2 numerical delta 1.192093E-07

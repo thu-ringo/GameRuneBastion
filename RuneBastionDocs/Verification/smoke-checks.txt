@@ -1,0 +1,12 @@
+PASS: New run starts at wave 1 with full castle health
+PASS: Three enemy types spawn
+PASS: Ice consumes mana and activates
+PASS: Lightning activates after ice
+PASS: Real combat kills enemies and awards score
+PASS: Skills spend energy
+PASS: Cooldown rejects repeated lightning
+PASS: Pause stops simulation
+PASS: Resume restores simulation
+PASS: Only Rune Bastion in build scenes
+PASS: Legacy Animal Explorer removed from active Assets
+PASS: CraftPix animation frames imported

@@ -1,0 +1,5 @@
+PASS Unity reads backend health
+PASS Unity creates authenticated session
+PASS Unity writes real score to API
+PASS Unity reads its saved score from leaderboard
+PASS Unity loads daily challenge seed

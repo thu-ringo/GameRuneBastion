@@ -1,0 +1,49 @@
+{
+  "architecture": "1024 -> Dense96/ReLU -> Dense48/ReLU -> Dense4/Softmax",
+  "classes": [
+    "triangle",
+    "circle",
+    "lightning",
+    "other"
+  ],
+  "seed": 20261022,
+  "source_counts": {
+    "triangle": 2400,
+    "circle": 2400,
+    "lightning": 2400
+  },
+  "negative_samples": 2200,
+  "train_count": 7520,
+  "test_count": 1880,
+  "test_accuracy": 0.8888297872340426,
+  "confusion_matrix_true_rows_pred_cols": [
+    [
+      466,
+      0,
+      7,
+      16
+    ],
+    [
+      3,
+      445,
+      5,
+      6
+    ],
+    [
+      13,
+      1,
+      414,
+      69
+    ],
+    [
+      17,
+      9,
+      63,
+      346
+    ]
+  ],
+  "training_seconds": 2.9016916751861572,
+  "source": "Google Quick, Draw! simplified dataset, CC BY 4.0; synthetic negative scribbles",
+  "split": "Random 80/20 of downloaded recognized drawings; author identity not available. Test set not used for gradients.",
+  "limitations": "Held-out drawings, not a phone/user study. Must evaluate live finger drawings. Other class contains synthetic negatives only."
+}

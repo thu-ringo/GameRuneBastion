@@ -1,0 +1,10 @@
+PASS health endpoint
+PASS score requires bearer authentication
+PASS authenticated score accepted
+PASS score retry is idempotent
+PASS negative score rejected
+PASS leaderboard reads persisted score
+PASS profile input saved
+PASS profile output restored
+PASS daily challenge stable for current UTC day
+PASS private profile protected
