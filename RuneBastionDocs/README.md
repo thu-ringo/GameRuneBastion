@@ -1,5 +1,7 @@
 # RUNE BASTION — Pháp Sư Giữ Thành
 
+> **Cập nhật v2:** hướng dẫn nhân vật, shop và kết thúc mới nằm trong [UPDATE-v2.md](UPDATE-v2.md). Các mục mô tả pháp sư cũ bên dưới là hồ sơ bản v1.
+
 Game phòng thủ 2D cho Unity 6000.5.7f1. Một trận gồm 10 đợt, ba phép có thể phối hợp, nâng cấp theo lượt và boss Nox.
 
 ## Chạy game

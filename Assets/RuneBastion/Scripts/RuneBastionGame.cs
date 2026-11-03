@@ -18,7 +18,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     public float Health { get; private set; } = 1000;
     public float Mana { get; private set; } = 100;
     public int EnemyCount => enemies.Count;
-    public const int TotalWaves = 10;
+    public const int TotalWaves = 5;
     public bool Paused { get; private set; }
     const float Ground = -2.13f, Gate = 6.15f;
     readonly List<Enemy> enemies = new List<Enemy>();
@@ -45,7 +45,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         public Transform hp; public float health,maxHealth,speed,attackClock,frozenUntil,burnUntil,burnTick,seed;
         public int kind; public bool alive=true; public Vector3 scale; public EnemySpriteAnimator animator; public float baseSpeed; public float hitUntil;
     }
-    sealed class Shot { public Transform root; public Enemy target; public Vector3 from; public float t; public bool basic; }
+    sealed class Shot { public Transform root; public Enemy target; public Vector3 from; public float t; public bool basic; public float damage; public bool blade,piercing; public System.Collections.Generic.HashSet<Enemy> hit=new System.Collections.Generic.HashSet<Enemy>(); }
     sealed class Visual { public Transform root; public float time,life; public Vector3 velocity,scale; public SpriteRenderer sprite; public TextMesh text; }
 
     void Awake() {
@@ -62,17 +62,14 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         cameraOrigin=new Vector3(0,0,-10);cam.transform.position=cameraOrigin;gameCamera.backgroundColor=new Color(.025f,.035f,.09f);
         var bg=Resources.Load<Sprite>("Battlefield");
         if(bg) { var b=Render("Twilight Valley",bg,Vector3.zero,Color.white,-20); b.transform.localScale=new Vector3(17.78f/bg.bounds.size.x,10/bg.bounds.size.y,1); }
-        LoadWizard(); CreateWizard(); CreateUi(); CreateAudio(); CreateStars(); InitializeCloud(); ShowMenu();
+        LoadHeroProfile(); LoadWizard(); CreateWizard(); CreateUi(); CreateAudio(); CreateStars(); InitializeCloud(); ShowMenu();
     }
 
-    void LoadWizard() {
-        foreach(string clip in new[]{"idle","attack","hurt","dead"})
-            wizardClips[clip]=Resources.LoadAll<Sprite>("Wizard").Where(s=>s.name.StartsWith(clip+"_",StringComparison.Ordinal)).OrderBy(s=>s.name).ToArray();
-    }
+    void LoadWizard() {RefreshHeroArt();}
     void CreateWizard() {
         Sprite s=wizardClips["idle"].FirstOrDefault();if(!s)return;
-        wizard=Render("Aster - CraftPix animated wizard",s,new Vector3(7,.25f,0),Color.white,10);
-        wizard.flipX=true;wizard.transform.localScale=Vector3.one*.5f;
+        wizard=Render(HeroName+" - Player",s,new Vector3(7,.25f,0),Color.white,10);
+        wizard.flipX=false;wizard.transform.localScale=Vector3.one*1.12f;
     }
     SpriteRenderer Render(string name,Sprite sprite,Vector3 position,Color color,int order,Transform parent=null) {
         var g=new GameObject(name,typeof(SpriteRenderer));g.transform.SetParent(parent?parent:world,false);g.transform.localPosition=position;
@@ -103,7 +100,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     }
     Image Panel(string name,Transform p,float x,float y,float w,float h,Color c) {var n=Node(name,p,x,y,w,h);var im=n.gameObject.AddComponent<Image>();im.color=c;return im;}
     Text Label(string name,Transform p,string value,float x,float y,float w,float h,int size,Color c,TextAnchor alignment=TextAnchor.MiddleLeft) {
-        var n=Node(name,p,x,y,w,h);var t=n.gameObject.AddComponent<Text>();t.font=font;t.text=value;t.fontSize=size;t.color=c;t.alignment=alignment;
+        var n=Node(name,p,x,y,w,h);var t=n.gameObject.AddComponent<Text>();t.font=font;t.text=(value??"").Normalize(System.Text.NormalizationForm.FormC);t.fontSize=size;t.color=c;t.alignment=alignment;
         t.raycastTarget=false;t.horizontalOverflow=HorizontalWrapMode.Wrap;t.verticalOverflow=VerticalWrapMode.Truncate;return t;
     }
 
@@ -112,10 +109,10 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
 
     public void StartRun() {
         if(overlay)Destroy(overlay); ClearBattle();State=Phase.Battle;Paused=false;Time.timeScale=1;
-        hudRoot.gameObject.SetActive(true); if(wizard){wizard.transform.position=new Vector3(7,.25f,0);wizard.transform.localScale=Vector3.one*.5f;} random=dailyMode?new System.Random(dailySeed):new System.Random();
+        hudRoot.gameObject.SetActive(true); random=dailyMode?new System.Random(dailySeed):new System.Random();
         Wave=0;Score=Kills=0;Health=1000;Mana=100;elapsed=0;damageMultiplier=1;attackInterval=.85f;manaRegen=6;extraChains=0;upgradedIce=false;targetX=Gate;
         if(!dailyMode){damageMultiplier+=PlayerPrefs.GetInt("RB.ForgeDamage",0)*.08f;manaRegen+=PlayerPrefs.GetInt("RB.ForgeMana",0);attackInterval*=Mathf.Pow(.93f,PlayerPrefs.GetInt("RB.ForgeSpeed",0));}
-        Array.Clear(cooldown,0,3);autoClock=.4f;BeginWave();
+        gateGuard=0;PrepareHeroRun();Array.Clear(cooldown,0,3);autoClock=.4f;BeginWave();RefreshHud();
     }
     void ClearBattle() {
         foreach(var e in enemies)if(e.root)Destroy(e.root);enemies.Clear();
@@ -133,7 +130,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         if(!Paused)AnimateWizard();
         if(State!=Phase.Battle || Paused)return;
         float dt=Mathf.Min(Time.deltaTime,.05f);elapsed+=dt;Mana=Mathf.Min(100,Mana+manaRegen*dt);
-        for(int i=0;i<3;i++)cooldown[i]=Mathf.Max(0,cooldown[i]-dt);
+        for(int i=0;i<3;i++){cooldown[i]=Mathf.Max(0,cooldown[i]-dt);runeCooldown[i]=Mathf.Max(0,runeCooldown[i]-dt);}
         HandleInput();spawnClock-=dt;
         if(toSpawn>0 && spawnClock<=0) {int kind=ChooseEnemyKind();Spawn(kind);toSpawn--;waveSpawned++;spawnClock=Mathf.Max(.48f,1.5f-Wave*.08f);}
         TickEnemies(dt);TickShots(dt);TickEffects(dt);
@@ -146,9 +143,9 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     void LateUpdate() {if(State!=Phase.Battle && !Paused)TickEffects(Time.deltaTime);}
     void HandleInput() {
         if(Keyboard.current!=null) {
-            if(Keyboard.current.digit1Key.wasPressedThisFrame)CastSpell(0);
-            if(Keyboard.current.digit2Key.wasPressedThisFrame)CastSpell(1);
-            if(Keyboard.current.digit3Key.wasPressedThisFrame)CastSpell(2);
+            if(Keyboard.current.digit1Key.wasPressedThisFrame)CastHeroSkill(0);
+            if(Keyboard.current.digit2Key.wasPressedThisFrame)CastHeroSkill(1);
+            if(Keyboard.current.digit3Key.wasPressedThisFrame)CastHeroSkill(2);
         }
         Vector2 screen=Vector2.zero;bool click=false;
         if(Mouse.current!=null && Mouse.current.leftButton.wasPressedThisFrame){screen=Mouse.current.position.ReadValue();click=true;}
@@ -202,29 +199,23 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
             if(elapsed<e.burnUntil){e.burnTick-=dt;if(e.burnTick<=0){e.burnTick=.5f;Damage(e,6*damageMultiplier,spellColors[0]);if(!e.alive)continue;}}
             float t=elapsed*5+e.seed;float factor=frozen?.22f:1;
             if(e.root.transform.position.x<Gate)e.root.transform.position+=Vector3.right*e.speed*factor*dt;
-            else {e.attackClock-=dt;if(e.attackClock<=0){Health=Mathf.Max(0,Health-(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12));e.attackClock=1.2f;shake=.4f;Play(gateSound,.3f);Floating("CỔNG -"+(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12),new Vector3(6.5f,.5f,0),new Color(1,.4f,.4f));}}
+            else {e.attackClock-=dt;if(e.attackClock<=0){Health=Mathf.Max(0,Health-(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12)*(1-gateGuard));hurtUntil=Time.unscaledTime+.35f;e.attackClock=1.2f;shake=.4f;Play(gateSound,.3f);Floating("CỔNG -"+(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12),new Vector3(6.5f,.5f,0),new Color(1,.4f,.4f));}}
             e.art.localPosition=new Vector3(0,e.kind==1?Mathf.Sin(t*1.4f)*.15f:e.kind==0?Mathf.Abs(Mathf.Sin(t))*.12f:Mathf.Sin(t)*.025f,0);
             e.art.localScale=e.scale*(1+(e.kind==0?.065f:.025f)*Mathf.Sin(t));
             if(!e.animator)e.body.color=frozen?new Color(.2f,.68f,.85f):e.kind>=2?new Color(.24f,.22f,.38f):new Color(.16f,.08f,.29f);
-            e.hp.localScale=new Vector3(Mathf.Max(0,e.health/e.maxHealth),1,1);
+            float healthRatio=Mathf.Clamp01(e.health/e.maxHealth);
+            e.hp.localScale=new Vector3(healthRatio,1,1);
+            e.hp.localPosition=new Vector3((healthRatio-1)*.5f,0,-.01f);
         }
     }
-    void Shoot(Enemy target) {
-        Vector3 from=new Vector3(6.35f,1.3f,0);var s=Shape("Arcane bolt",world,from,new Vector3(.2f,.2f,1),new Color(.6f,.45f,1),15);
-        shots.Add(new Shot{root=s.transform,target=target,from=from,t=0,basic=true});SetWizardAttack();
-    }
-    void TickShots(float dt) {
-        for(int i=shots.Count-1;i>=0;i--){var s=shots[i];if(s.target==null||!s.target.alive){Destroy(s.root.gameObject);shots.RemoveAt(i);continue;}
-            s.t+=dt*1.9f;Vector3 end=s.target.root.transform.position+Vector3.up*.5f;
-            s.root.position=Vector3.Lerp(s.from,end,s.t)+Vector3.up*Mathf.Sin(s.t*Mathf.PI)*.9f;
-            if(s.t>=1){Damage(s.target,20*damageMultiplier,new Color(.65f,.55f,1));Burst(end,new Color(.6f,.5f,1),6,.7f);Destroy(s.root.gameObject);shots.RemoveAt(i);}
-        }
-    }
+    void Shoot(Enemy target) {SetWizardAttack();StartCoroutine(ReleaseBasicAttack(target,runGeneration));}
+    IEnumerator ReleaseBasicAttack(Enemy target,int generation){yield return new WaitForSeconds(.18f);if(State==Phase.Battle&&generation==runGeneration){if(target==null||!target.alive)target=PickTarget();LaunchShot(target,SelectedHero==Hero.Himmel,20*damageMultiplier,false);}}
+    void TickShots(float dt) {TickHeroShots(dt);}
     public bool CastSpell(int kind) {
-        if(kind<0||kind>2||State!=Phase.Battle||Paused)return false;
-        if(Mana<costs[kind]||cooldown[kind]>0){tip.text="Phép chưa sẵn sàng — chờ hồi hoặc thêm năng lượng";StartCoroutine(ClearTipAfter(1.5f));return false;}
-        var primary=PickTarget();if(primary==null)return false;Mana-=costs[kind];cooldown[kind]=kind==2?6:kind==1?5:4;
-        Vector3 point=primary.root.transform.position+Vector3.up*.4f;SetWizardAttack();
+        if(kind<0||kind>2||State!=Phase.Battle||Paused)return false;var spellCooldown=runeCasting?runeCooldown:cooldown;
+        if(Mana<costs[kind]||spellCooldown[kind]>0){tip.text="Phép chưa sẵn sàng — chờ hồi hoặc thêm năng lượng";StartCoroutine(ClearTipAfter(1.5f));return false;}
+        var primary=PickTarget();if(primary==null)return false;Mana-=costs[kind];spellCooldown[kind]=kind==2?6:kind==1?5:4;
+        Vector3 point=primary.root.transform.position+Vector3.up*.4f;if(!runeCasting)SetWizardAttack();
         if(kind==0){Ring(point,2.2f,spellColors[0]);Burst(point,spellColors[0],32,2.2f);Play(fireSound,.35f);
             foreach(var e in enemies.ToArray())if(Mathf.Abs(e.root.transform.position.x-point.x)<2.2f){e.burnUntil=elapsed+3;Damage(e,65*damageMultiplier,spellColors[0]);}}
         else if(kind==1){Ring(point,3,spellColors[1]);Burst(point,spellColors[1],26,1.8f);Play(iceSound,.3f);
@@ -233,11 +224,11 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
             foreach(var e in targets){bool frozen=elapsed<e.frozenUntil;Vector3 p=e.root.transform.position+Vector3.up*.5f;Lightning(p);Damage(e,(frozen?180:110)*damageMultiplier,spellColors[2]);Burst(p,spellColors[2],18,1.4f);if(frozen)Floating("PHÁ BĂNG!",p+Vector3.up*.8f,spellColors[1]);}}
         RefreshHud();return true;
     }
-    void SetWizardAttack(){castUntil=Time.unscaledTime+.42f;}
+    void SetWizardAttack(){castUntil=Time.unscaledTime+.57f;}
     void AnimateWizard() {
-        if(!wizard)return;string next=Time.unscaledTime<castUntil?"attack":"idle";
+        if(!wizard)return;string next=State==Phase.Lost?"defeat":State==Phase.Won?"victory":Time.unscaledTime<hurtUntil?"hurt":Time.unscaledTime<castUntil?"attack":"idle";
         if(next!=wizardClip){wizardClip=next;animationClock=0;}animationClock+=Time.unscaledDeltaTime;
-        var frames=wizardClips[wizardClip];if(frames.Length>0){wizard.sprite=frames[(int)(animationClock*(next=="attack"?9:5))%frames.Length];wizard.sharedMaterial=TextureMaterial(wizard.sprite.texture);}
+        if(wizardClips.TryGetValue(wizardClip,out var frames)&&frames.Length>0){int frame=(int)(animationClock*(next=="attack"?7:5));if(next=="attack"||next=="defeat"||next=="hurt")frame=Mathf.Min(frame,frames.Length-1);else frame%=frames.Length;wizard.sprite=frames[frame];wizard.sharedMaterial=TextureMaterial(wizard.sprite.texture);}
     }
     void Damage(Enemy e,float damage,Color color) {
         if(!e.alive)return;e.hitUntil=elapsed+.18f;e.health-=damage;if(Time.unscaledTime-lastHitSound>.09f){Play(hitSound,.18f);lastHitSound=Time.unscaledTime;}Floating(Mathf.CeilToInt(damage).ToString(),e.root.transform.position+Vector3.up*(e.kind>=2?1.8f:1),color);
@@ -274,7 +265,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
 
     public void SelectUpgrade(int id) {
         if(State!=Phase.Upgrade)return;
-        switch(id){case 0:damageMultiplier*=1.2f;break;case 1:attackInterval=Mathf.Max(.25f,attackInterval*.85f);break;case 2:manaRegen+=2;break;case 3:Health=Mathf.Min(1000,Health+250);break;case 4:extraChains++;break;case 5:upgradedIce=true;break;}
+        switch(id){case 0:damageMultiplier*=1.2f;break;case 1:attackInterval=Mathf.Max(.25f,attackInterval*.85f);break;case 2:manaRegen+=2;break;case 3:Health=Mathf.Min(1000,Health+250);break;case 4:extraChains++;if(SelectedHero==Hero.Himmel)damageMultiplier+=.1f;break;case 5:upgradedIce=true;if(SelectedHero==Hero.Himmel)attackInterval=Mathf.Max(.25f,attackInterval*.9f);break;}
         Mana=Mathf.Min(100,Mana+25);if(overlay)Destroy(overlay);BeginWave();RefreshHud();
     }
 

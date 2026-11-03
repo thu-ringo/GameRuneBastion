@@ -1,6 +1,8 @@
 # RUNE BASTION — Pháp Sư Giữ Thành
 
-Game phòng thủ 2D: pháp sư bảo vệ lâu đài qua 10 đợt quái, phối hợp Lửa/Băng/Sét, chọn nâng cấp và đối đầu boss.
+> **Bản v2 — Kiếm & Phép:** chọn Himmel/Frieren, nhập tên, kiếm khí, cổ ngữ ngoại lực, túi đồ/shop và kết thúc đám cưới. Xem [hướng dẫn v2](RuneBastionDocs/UPDATE-v2.md).
+
+Game phòng thủ 2D: pháp sư bảo vệ lâu đài qua 5 đợt quái, phối hợp Lửa/Băng/Sét, chọn nâng cấp và đối đầu boss.
 
 ## Mở project trên máy khác
 
@@ -11,7 +13,7 @@ git clone https://github.com/thu-ringo/GameRuneBastion.git
 cd GameRuneBastion
 ```
 
-Trong Unity Hub chọn **Add → Add project from disk**, chọn thư mục `GameRuneBastion`. Đợi Unity tải package và tạo lại Library. Mở scene `Assets/RuneBastion/Scenes/RuneBastion.unity`, nhấn **Play**, rồi **Bắt đầu chơi**. Chơi trong Editor không cần xuất APK hay cấu hình server; tính năng online cần backend riêng.
+Trong Unity Hub chọn **Add → Add project from disk**, chọn thư mục `GameRuneBastion`. Đợi Unity tải package và tạo lại Library. Mở scene `Assets/RuneBastion/Scenes/RuneBastion.unity`, nhấn **Play**, rồi **Bắt đầu chơi**, chọn nhân vật và nhập tên. Chơi trong Editor không cần xuất APK hay cấu hình server; tính năng online cần backend riêng.
 
 ## Nội dung repository
 

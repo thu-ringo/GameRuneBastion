@@ -1,0 +1,2353 @@
+fileFormatVersion: 2
+guid: 148f1c22b05291840a47d83867ca0af0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8519611327826706903
+    second: Frieren_0
+  - first:
+      213: 7072999065047517576
+    second: Frieren_1
+  - first:
+      213: -2704883157368807861
+    second: Frieren_2
+  - first:
+      213: -221174210100912351
+    second: Frieren_3
+  - first:
+      213: -7583901461103353588
+    second: Frieren_4
+  - first:
+      213: 5116643472471167620
+    second: Frieren_5
+  - first:
+      213: 4681782439855553762
+    second: Frieren_6
+  - first:
+      213: 6357437025462577120
+    second: Frieren_7
+  - first:
+      213: -5258566480176070106
+    second: Frieren_8
+  - first:
+      213: -4122195205285536388
+    second: Frieren_9
+  - first:
+      213: -549563330676580588
+    second: Frieren_10
+  - first:
+      213: 2840364081474883704
+    second: Frieren_11
+  - first:
+      213: 5032750018919579401
+    second: Frieren_12
+  - first:
+      213: -3269914298043525528
+    second: Frieren_13
+  - first:
+      213: 4952426973128342054
+    second: Frieren_14
+  - first:
+      213: 7693571068665422660
+    second: Frieren_15
+  - first:
+      213: 1982548906771583208
+    second: Frieren_16
+  - first:
+      213: 6798821984425936333
+    second: Frieren_17
+  - first:
+      213: 3286606602715906016
+    second: Frieren_18
+  - first:
+      213: 3941445993634882056
+    second: Frieren_19
+  - first:
+      213: -7197509044072224183
+    second: Frieren_20
+  - first:
+      213: -7928077377914405175
+    second: Frieren_21
+  - first:
+      213: -4080005958867874728
+    second: Frieren_22
+  - first:
+      213: -1102471140755617650
+    second: Frieren_23
+  - first:
+      213: 6876988785617130110
+    second: Frieren_24
+  - first:
+      213: 692385824504018156
+    second: Frieren_25
+  - first:
+      213: 313369975225740527
+    second: Frieren_26
+  - first:
+      213: 7158849883484187861
+    second: Frieren_27
+  - first:
+      213: -3512820501164229745
+    second: Frieren_28
+  - first:
+      213: -48305142450185714
+    second: Frieren_29
+  - first:
+      213: -7155451925557912693
+    second: Frieren_30
+  - first:
+      213: -8127111339406946570
+    second: Frieren_31
+  - first:
+      213: -1494116164347318885
+    second: Frieren_32
+  - first:
+      213: -2734500507500393113
+    second: Frieren_33
+  - first:
+      213: 3488547810080493396
+    second: Frieren_34
+  - first:
+      213: -4097013947276614306
+    second: Frieren_35
+  - first:
+      213: -1748833016757938525
+    second: Frieren_36
+  - first:
+      213: 4288087553801304128
+    second: Frieren_37
+  - first:
+      213: -7497862975391126239
+    second: Frieren_38
+  - first:
+      213: 5122983141999936584
+    second: Frieren_39
+  - first:
+      213: 2898462009993945570
+    second: Frieren_40
+  - first:
+      213: -3472079119877673513
+    second: Frieren_41
+  - first:
+      213: 8889969254692568587
+    second: Frieren_42
+  - first:
+      213: -2905918076441523925
+    second: Frieren_43
+  - first:
+      213: 4631824352867972920
+    second: Frieren_44
+  - first:
+      213: -2136293887674717
+    second: Frieren_45
+  - first:
+      213: -8587871349763166855
+    second: Frieren_46
+  - first:
+      213: 7655643219288150945
+    second: Frieren_47
+  - first:
+      213: 2330224732642108052
+    second: Frieren_48
+  - first:
+      213: 7593627001108822717
+    second: Frieren_49
+  - first:
+      213: -8046359833757124262
+    second: Frieren_50
+  - first:
+      213: 2230685754728946816
+    second: Frieren_51
+  - first:
+      213: 422632827828063500
+    second: Frieren_52
+  - first:
+      213: 4435775707713341768
+    second: Frieren_53
+  - first:
+      213: 8088195065819123529
+    second: Frieren_54
+  - first:
+      213: -7247511476587857643
+    second: Frieren_55
+  - first:
+      213: 1351233100602341538
+    second: Frieren_56
+  - first:
+      213: 5929598830830799307
+    second: Frieren_57
+  - first:
+      213: 7443928890237626495
+    second: Frieren_58
+  - first:
+      213: -3400513469232506152
+    second: Frieren_59
+  - first:
+      213: -9153075678516475049
+    second: Frieren_60
+  - first:
+      213: -7133047118668163076
+    second: Frieren_61
+  - first:
+      213: 2748046685451692532
+    second: Frieren_62
+  - first:
+      213: 2924036365131438035
+    second: Frieren_63
+  - first:
+      213: -5236678754082261109
+    second: Frieren_64
+  - first:
+      213: 2409493399652209850
+    second: Frieren_65
+  - first:
+      213: -3386028152097433684
+    second: Frieren_66
+  - first:
+      213: -1520532601768924709
+    second: Frieren_67
+  - first:
+      213: -3170508468175704971
+    second: Frieren_68
+  - first:
+      213: -8482114006092184754
+    second: Frieren_69
+  - first:
+      213: 9190304373208358088
+    second: Frieren_70
+  - first:
+      213: 6553970333080331287
+    second: Frieren_71
+  - first:
+      213: 3783750770208986444
+    second: Frieren_72
+  - first:
+      213: 21987215096280095
+    second: Frieren_73
+  - first:
+      213: 2838817664222561165
+    second: Frieren_74
+  - first:
+      213: 4341322007686318704
+    second: Frieren_75
+  - first:
+      213: 6482517178091896813
+    second: Frieren_76
+  - first:
+      213: 2237615901768314875
+    second: Frieren_77
+  - first:
+      213: 4102447812401674862
+    second: Frieren_78
+  - first:
+      213: -7983347609763683019
+    second: Frieren_79
+  - first:
+      213: -6484985498368114679
+    second: Frieren_80
+  - first:
+      213: -9145770357217576722
+    second: Frieren_81
+  - first:
+      213: -7045392697411243920
+    second: Frieren_82
+  - first:
+      213: -1701138202981888606
+    second: Frieren_83
+  - first:
+      213: 8002119246322453649
+    second: Frieren_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frieren_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 379
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d141832d5dbb3670800000000000000
+      internalID: 8519611327826706903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1164
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889c3d0ec27582260800000000000000
+      internalID: 7072999065047517576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 397
+        width: 624
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e58167913567ad0800000000000000
+      internalID: -2704883157368807861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_3
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 397
+        width: 267
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f157d4a3b3eecf0800000000000000
+      internalID: -221174210100912351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_4
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1110
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c016e576dc190c690800000000000000
+      internalID: -7583901461103353588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1088
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48217fa0128f10740800000000000000
+      internalID: 5116643472471167620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_6
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1068
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec704be25809f040800000000000000
+      internalID: 4681782439855553762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1026
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7ec90aa472a3850800000000000000
+      internalID: 6357437025462577120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1037
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6224459b5a1d507b0800000000000000
+      internalID: -5258566480176070106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 972
+        width: 106
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d13261d450bc6c0800000000000000
+      internalID: -4122195205285536388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1044
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f117dff0f8f58f0800000000000000
+      internalID: -549563330676580588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1000
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870d61d45100b6720800000000000000
+      internalID: 2840364081474883704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1010
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fba014a7be7d540800000000000000
+      internalID: 5032750018919579401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_13
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 955
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866152b454eee92d0800000000000000
+      internalID: -3269914298043525528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_14
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 962
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ab06dc71e8ab440800000000000000
+      internalID: 4952426973128342054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443660aef1e05ca60800000000000000
+      internalID: 7693571068665422660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 885
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e095f90abd638b10800000000000000
+      internalID: 1982548906771583208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 825
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc503d8b2944a5e50800000000000000
+      internalID: 6798821984425936333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 819
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efb55fba4f5c9d20800000000000000
+      internalID: 3286606602715906016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 767
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8026eff9f34d2b630800000000000000
+      internalID: 3941445993634882056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 792
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ae96098af4d1c90800000000000000
+      internalID: -7197509044072224183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_21
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 789
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cef99921afc9f190800000000000000
+      internalID: -7928077377914405175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_22
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 789
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c043c7238e067c0800000000000000
+      internalID: -4080005958867874728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 773
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e884420b65c33b0f0800000000000000
+      internalID: -1102471140755617650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 713
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72dd0b5dd8ff6f50800000000000000
+      internalID: 6876988785617130110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_25
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 679
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4f31d2d39db9900800000000000000
+      internalID: 692385824504018156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_26
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 705
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec6a980550595400800000000000000
+      internalID: 313369975225740527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_27
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 682
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dceb613a08595360800000000000000
+      internalID: 7158849883484187861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 650
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b756cad54ff3fc0800000000000000
+      internalID: -3512820501164229745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_29
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 644
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a9e679ab2645ff0800000000000000
+      internalID: -48305142450185714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 625
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b5cb9826ab2bc90800000000000000
+      internalID: -7155451925557912693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 593
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe899ccb43b63f80800000000000000
+      internalID: -8127111339406946570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_32
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 560
+        width: 89
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9da8e2c345d34be0800000000000000
+      internalID: -1494116164347318885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 610
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d4054c64a1d0ad0800000000000000
+      internalID: -2734500507500393113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 578
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f80d900cfc96030800000000000000
+      internalID: 3488547810080493396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_35
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 562
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55a1c8958b7427c0800000000000000
+      internalID: -4097013947276614306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 431
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a61ba013a5eab7e0800000000000000
+      internalID: -1748833016757938525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_37
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 429
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048b91239e8528b30800000000000000
+      internalID: 4288087553801304128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_38
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 425
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d2249695d32f790800000000000000
+      internalID: -7497862975391126239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_39
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 349
+        width: 124
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8448831660e781740800000000000000
+      internalID: 5122983141999936584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_40
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 383
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e167a467d7693820800000000000000
+      internalID: 2898462009993945570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_41
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 409
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dde3a3bf62b0dfc0800000000000000
+      internalID: -3472079119877673513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 371
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e3812afe38f5b70800000000000000
+      internalID: 8889969254692568587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 391
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29015bd7ea1ca7d0800000000000000
+      internalID: -2905918076441523925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_44
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 212
+        width: 252
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837f2be55bb874040800000000000000
+      internalID: 4631824352867972920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_45
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 382
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a670b15d0968fff0800000000000000
+      internalID: -2136293887674717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_46
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 341
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dac940280c1d880800000000000000
+      internalID: -8587871349763166855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_47
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 196
+        width: 315
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a35cc452fe4e3a60800000000000000
+      internalID: 7655643219288150945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_48
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 381
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49266fb5c0f965020800000000000000
+      internalID: 2330224732642108052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_49
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 347
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbaf7e5568bf16960800000000000000
+      internalID: 7593627001108822717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_50
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 367
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a597fe5dc56955090800000000000000
+      internalID: -8046359833757124262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_51
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 327
+        width: 142
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c942010ecf4fe10800000000000000
+      internalID: 2230685754728946816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_52
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 320
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d4c15515e7dd500800000000000000
+      internalID: 422632827828063500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_53
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 321
+        width: 94
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8498f81218a0f8d30800000000000000
+      internalID: 4435775707713341768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_54
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 0
+        width: 317
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f473c2f8a0f3070800000000000000
+      internalID: 8088195065819123529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_55
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 324
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519f96406baab6b90800000000000000
+      internalID: -7247511476587857643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_56
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 304
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8f62a885b80c210800000000000000
+      internalID: 1351233100602341538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_57
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 304
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9cd3468ba2a4250800000000000000
+      internalID: 5929598830830799307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78a1e3d2e52e4760800000000000000
+      internalID: 7443928890237626495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_59
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 256
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da17743403fec0d0800000000000000
+      internalID: -3400513469232506152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_60
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 231
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b02cb5a2eb9f080800000000000000
+      internalID: -9153075678516475049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 225
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf719a52073520d90800000000000000
+      internalID: -7133047118668163076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_62
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 200
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9a98096e5032620800000000000000
+      internalID: 2748046685451692532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_63
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 265
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7dbf5f493449820800000000000000
+      internalID: 2924036365131438035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_64
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 214
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8777141b649357b0800000000000000
+      internalID: -5236678754082261109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_65
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 198
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab41bee1b7d307120800000000000000
+      internalID: 2409493399652209850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_66
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 208
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca792cae5596201d0800000000000000
+      internalID: -3386028152097433684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_67
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 210
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9a922a7abf5eae0800000000000000
+      internalID: -1520532601768924709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_68
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 190
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ce405a8571004d0800000000000000
+      internalID: -3170508468175704971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_69
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 192
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43828a604a794a80800000000000000
+      internalID: -8482114006092184754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_70
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 166
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc9dc692258a8f70800000000000000
+      internalID: 9190304373208358088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_71
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 136
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714a3b32b4164fa50800000000000000
+      internalID: 6553970333080331287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_72
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 176
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45dae04745928430800000000000000
+      internalID: 3783750770208986444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_73
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 61
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14f961714d1e4000800000000000000
+      internalID: 21987215096280095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_74
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 71
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83071aff91856720800000000000000
+      internalID: 2838817664222561165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_75
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 95
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a8abb5d597f3c30800000000000000
+      internalID: 4341322007686318704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_76
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 77
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deff882170786f950800000000000000
+      internalID: 6482517178091896813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_77
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 86
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff6aa8aecb9d0f10800000000000000
+      internalID: 2237615901768314875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_78
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 15
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ab7c7bc82dee830800000000000000
+      internalID: 4102447812401674862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_79
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 39
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535629185a3753190800000000000000
+      internalID: -7983347609763683019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_80
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 0
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90085345c04b006a0800000000000000
+      internalID: -6484985498368114679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_81
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 21
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8bfb40152b31180800000000000000
+      internalID: -9145770357217576722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_82
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 23
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070fba77bacb93e90800000000000000
+      internalID: -7045392697411243920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_83
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 41
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad0b6141d75468e0800000000000000
+      internalID: -1701138202981888606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frieren_84
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 38
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ccd57be0d3d0f60800000000000000
+      internalID: 8002119246322453649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Frieren_0: 8519611327826706903
+      Frieren_1: 7072999065047517576
+      Frieren_10: -549563330676580588
+      Frieren_11: 2840364081474883704
+      Frieren_12: 5032750018919579401
+      Frieren_13: -3269914298043525528
+      Frieren_14: 4952426973128342054
+      Frieren_15: 7693571068665422660
+      Frieren_16: 1982548906771583208
+      Frieren_17: 6798821984425936333
+      Frieren_18: 3286606602715906016
+      Frieren_19: 3941445993634882056
+      Frieren_2: -2704883157368807861
+      Frieren_20: -7197509044072224183
+      Frieren_21: -7928077377914405175
+      Frieren_22: -4080005958867874728
+      Frieren_23: -1102471140755617650
+      Frieren_24: 6876988785617130110
+      Frieren_25: 692385824504018156
+      Frieren_26: 313369975225740527
+      Frieren_27: 7158849883484187861
+      Frieren_28: -3512820501164229745
+      Frieren_29: -48305142450185714
+      Frieren_3: -221174210100912351
+      Frieren_30: -7155451925557912693
+      Frieren_31: -8127111339406946570
+      Frieren_32: -1494116164347318885
+      Frieren_33: -2734500507500393113
+      Frieren_34: 3488547810080493396
+      Frieren_35: -4097013947276614306
+      Frieren_36: -1748833016757938525
+      Frieren_37: 4288087553801304128
+      Frieren_38: -7497862975391126239
+      Frieren_39: 5122983141999936584
+      Frieren_4: -7583901461103353588
+      Frieren_40: 2898462009993945570
+      Frieren_41: -3472079119877673513
+      Frieren_42: 8889969254692568587
+      Frieren_43: -2905918076441523925
+      Frieren_44: 4631824352867972920
+      Frieren_45: -2136293887674717
+      Frieren_46: -8587871349763166855
+      Frieren_47: 7655643219288150945
+      Frieren_48: 2330224732642108052
+      Frieren_49: 7593627001108822717
+      Frieren_5: 5116643472471167620
+      Frieren_50: -8046359833757124262
+      Frieren_51: 2230685754728946816
+      Frieren_52: 422632827828063500
+      Frieren_53: 4435775707713341768
+      Frieren_54: 8088195065819123529
+      Frieren_55: -7247511476587857643
+      Frieren_56: 1351233100602341538
+      Frieren_57: 5929598830830799307
+      Frieren_58: 7443928890237626495
+      Frieren_59: -3400513469232506152
+      Frieren_6: 4681782439855553762
+      Frieren_60: -9153075678516475049
+      Frieren_61: -7133047118668163076
+      Frieren_62: 2748046685451692532
+      Frieren_63: 2924036365131438035
+      Frieren_64: -5236678754082261109
+      Frieren_65: 2409493399652209850
+      Frieren_66: -3386028152097433684
+      Frieren_67: -1520532601768924709
+      Frieren_68: -3170508468175704971
+      Frieren_69: -8482114006092184754
+      Frieren_7: 6357437025462577120
+      Frieren_70: 9190304373208358088
+      Frieren_71: 6553970333080331287
+      Frieren_72: 3783750770208986444
+      Frieren_73: 21987215096280095
+      Frieren_74: 2838817664222561165
+      Frieren_75: 4341322007686318704
+      Frieren_76: 6482517178091896813
+      Frieren_77: 2237615901768314875
+      Frieren_78: 4102447812401674862
+      Frieren_79: -7983347609763683019
+      Frieren_8: -5258566480176070106
+      Frieren_80: -6484985498368114679
+      Frieren_81: -9145770357217576722
+      Frieren_82: -7045392697411243920
+      Frieren_83: -1701138202981888606
+      Frieren_84: 8002119246322453649
+      Frieren_9: -4122195205285536388
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

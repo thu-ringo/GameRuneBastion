@@ -1,0 +1,23 @@
+{
+  "font": "Noto Sans static 550 / 700",
+  "NFC_normalization": true,
+  "vietnamese_glyphs_verified": 134,
+  "files": {
+    "UiBody.ttf": {
+      "all_vietnamese_present": true,
+      "symbols": {
+        "U+25C6": false,
+        "U+2726": false,
+        "U+21C4": false
+      }
+    },
+    "UiTitle.ttf": {
+      "all_vietnamese_present": true,
+      "symbols": {
+        "U+25C6": false,
+        "U+2726": false,
+        "U+21C4": false
+      }
+    }
+  }
+}

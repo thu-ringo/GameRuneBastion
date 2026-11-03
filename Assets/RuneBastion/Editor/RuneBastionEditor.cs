@@ -130,7 +130,7 @@ public static class RuneBastionEditor {
     static void FullCheckTick(){var g=Running();if(EditorApplication.timeSinceStartup>fullDeadline){fullCheck=-1;throw new Exception("Full run verification timed out");}
         if(g.State==RuneBastionGame.Phase.Battle){g.VerificationResolveWave();return;}
         if(g.State==RuneBastionGame.Phase.Upgrade){fullResults.Add("PASS wave "+g.Wave+" -> upgrade -> next wave");g.SelectUpgrade(g.Wave%6);return;}
-        if(g.State==RuneBastionGame.Phase.Won&&fullCheck==0){fullResults.Add("PASS wave 10 boss -> victory");g.StartRun();g.VerificationLose();fullCheck=1;return;}
+        if(g.State==RuneBastionGame.Phase.Won&&fullCheck==0){if(g.Wave!=RuneBastionGame.TotalWaves)throw new Exception("Victory at wrong wave");fullResults.Add("PASS wave "+g.Wave+" boss -> victory");g.StartRun();g.VerificationLose();fullCheck=1;return;}
         if(g.State==RuneBastionGame.Phase.Lost&&fullCheck==1){fullResults.Add("PASS castle destroyed -> defeat");g.StartRun();if(g.Wave!=1||g.Health!=1000)throw new Exception("Retry failed");fullResults.Add("PASS retry resets run");g.VerificationSetMode(false);g.VerificationHome();fullResults.Add("PASS return to main menu");fullCheck=-1;File.WriteAllLines("RuneBastionDocs/Verification/full-run.txt",fullResults);File.WriteAllText(Result,"FULL RUN PASS "+fullResults.Count);}
     }
 }

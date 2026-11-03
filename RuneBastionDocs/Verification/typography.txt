@@ -1,0 +1,2 @@
+PASS UiBody Vietnamese characters imported in Unity
+PASS UiTitle Vietnamese characters imported in Unity

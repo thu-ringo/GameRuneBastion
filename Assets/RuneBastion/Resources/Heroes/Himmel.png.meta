@@ -1,0 +1,4823 @@
+fileFormatVersion: 2
+guid: ac8899e1618a19543988f490835665ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6420643821708953965
+    second: Himmel_0
+  - first:
+      213: -3171691900084354480
+    second: Himmel_1
+  - first:
+      213: 3011897035384665341
+    second: Himmel_2
+  - first:
+      213: 8283707131402725285
+    second: Himmel_3
+  - first:
+      213: 6487215877544037871
+    second: Himmel_4
+  - first:
+      213: 1062239113274668484
+    second: Himmel_5
+  - first:
+      213: 4838918950249696852
+    second: Himmel_6
+  - first:
+      213: -1481876282747144007
+    second: Himmel_7
+  - first:
+      213: -3860554510185252111
+    second: Himmel_8
+  - first:
+      213: 9199184647389669156
+    second: Himmel_9
+  - first:
+      213: -3519141865001173268
+    second: Himmel_10
+  - first:
+      213: -2025802172751534150
+    second: Himmel_11
+  - first:
+      213: -8026396699640877819
+    second: Himmel_12
+  - first:
+      213: -6176185254439052157
+    second: Himmel_13
+  - first:
+      213: -3762971098556951350
+    second: Himmel_14
+  - first:
+      213: -1989734494219262963
+    second: Himmel_15
+  - first:
+      213: 1379345447862295468
+    second: Himmel_16
+  - first:
+      213: 5131844868184831400
+    second: Himmel_17
+  - first:
+      213: -4769233452545448598
+    second: Himmel_18
+  - first:
+      213: -7814504021393262862
+    second: Himmel_19
+  - first:
+      213: 1500371482640336626
+    second: Himmel_20
+  - first:
+      213: 2599469496869910425
+    second: Himmel_21
+  - first:
+      213: -6792868693556708892
+    second: Himmel_22
+  - first:
+      213: 3988492942061717122
+    second: Himmel_23
+  - first:
+      213: 2193688831362500862
+    second: Himmel_24
+  - first:
+      213: -4968961054472459355
+    second: Himmel_25
+  - first:
+      213: -4124532017633058659
+    second: Himmel_26
+  - first:
+      213: -4474100558517289231
+    second: Himmel_27
+  - first:
+      213: 2903647615750517912
+    second: Himmel_28
+  - first:
+      213: -2690319576110424019
+    second: Himmel_29
+  - first:
+      213: 1054280608084189916
+    second: Himmel_30
+  - first:
+      213: -7533406457062133676
+    second: Himmel_31
+  - first:
+      213: 4526855388985704359
+    second: Himmel_32
+  - first:
+      213: 9144385497435507309
+    second: Himmel_33
+  - first:
+      213: -72456629552311822
+    second: Himmel_34
+  - first:
+      213: 1276607484275584164
+    second: Himmel_35
+  - first:
+      213: 3449263082522208830
+    second: Himmel_36
+  - first:
+      213: 496286452256338624
+    second: Himmel_37
+  - first:
+      213: -6236546685650788882
+    second: Himmel_38
+  - first:
+      213: 7818236150662831221
+    second: Himmel_39
+  - first:
+      213: -797652813449224437
+    second: Himmel_40
+  - first:
+      213: 5042336513386994067
+    second: Himmel_41
+  - first:
+      213: -2731660423365194005
+    second: Himmel_42
+  - first:
+      213: -7896296312909978706
+    second: Himmel_43
+  - first:
+      213: -6391847585210173057
+    second: Himmel_44
+  - first:
+      213: -831019565694405698
+    second: Himmel_45
+  - first:
+      213: 841734190397937774
+    second: Himmel_46
+  - first:
+      213: -1533606623145918339
+    second: Himmel_47
+  - first:
+      213: 4613053692359740135
+    second: Himmel_48
+  - first:
+      213: 9054975237560598177
+    second: Himmel_49
+  - first:
+      213: 3023870144936392124
+    second: Himmel_50
+  - first:
+      213: -6805620760899914083
+    second: Himmel_51
+  - first:
+      213: -8699270500829552850
+    second: Himmel_52
+  - first:
+      213: -1268804651846861121
+    second: Himmel_53
+  - first:
+      213: 3419798409779062119
+    second: Himmel_54
+  - first:
+      213: 8912449286567901806
+    second: Himmel_55
+  - first:
+      213: 4917930198278041410
+    second: Himmel_56
+  - first:
+      213: -1928966770004910402
+    second: Himmel_57
+  - first:
+      213: 7822223205571957794
+    second: Himmel_58
+  - first:
+      213: -8758068805796944070
+    second: Himmel_59
+  - first:
+      213: -1480666836203231755
+    second: Himmel_60
+  - first:
+      213: 2866789780014018794
+    second: Himmel_61
+  - first:
+      213: 5057504988390385828
+    second: Himmel_62
+  - first:
+      213: -5349995268817582732
+    second: Himmel_63
+  - first:
+      213: -7537444355077100317
+    second: Himmel_64
+  - first:
+      213: -3313234763458571015
+    second: Himmel_65
+  - first:
+      213: 1167265552430274944
+    second: Himmel_66
+  - first:
+      213: 2286180483079500303
+    second: Himmel_67
+  - first:
+      213: 5609627964350766533
+    second: Himmel_68
+  - first:
+      213: 3119512323225824741
+    second: Himmel_69
+  - first:
+      213: -5355373564394130257
+    second: Himmel_70
+  - first:
+      213: 7232708594597832053
+    second: Himmel_71
+  - first:
+      213: 3426799557214110682
+    second: Himmel_72
+  - first:
+      213: 400349434882251047
+    second: Himmel_73
+  - first:
+      213: -5417975781318319623
+    second: Himmel_74
+  - first:
+      213: -7681252811479461388
+    second: Himmel_75
+  - first:
+      213: -5406813499599053249
+    second: Himmel_76
+  - first:
+      213: 3743445047395424208
+    second: Himmel_77
+  - first:
+      213: 915520949112410913
+    second: Himmel_78
+  - first:
+      213: -3267579066874701599
+    second: Himmel_79
+  - first:
+      213: -7811625883267817951
+    second: Himmel_80
+  - first:
+      213: 6137664384789772310
+    second: Himmel_81
+  - first:
+      213: 6003492106248033364
+    second: Himmel_82
+  - first:
+      213: 1520454921789587466
+    second: Himmel_83
+  - first:
+      213: 4477752320366997326
+    second: Himmel_84
+  - first:
+      213: 440353659614043933
+    second: Himmel_85
+  - first:
+      213: -4209283859887381989
+    second: Himmel_86
+  - first:
+      213: -1481926406415870193
+    second: Himmel_87
+  - first:
+      213: 6734608925250553638
+    second: Himmel_88
+  - first:
+      213: -1273719457858878010
+    second: Himmel_89
+  - first:
+      213: 7687247879974113807
+    second: Himmel_90
+  - first:
+      213: -5888536736863733966
+    second: Himmel_91
+  - first:
+      213: 6715962524513563484
+    second: Himmel_92
+  - first:
+      213: 7552716815103303590
+    second: Himmel_93
+  - first:
+      213: -5675526144645257429
+    second: Himmel_94
+  - first:
+      213: -1059201409239932731
+    second: Himmel_95
+  - first:
+      213: 1832328231376560563
+    second: Himmel_96
+  - first:
+      213: 3465108051868569497
+    second: Himmel_97
+  - first:
+      213: 3163264926960482661
+    second: Himmel_98
+  - first:
+      213: -1493964195632887173
+    second: Himmel_99
+  - first:
+      213: 6805736982035275136
+    second: Himmel_100
+  - first:
+      213: 5797085358059060512
+    second: Himmel_101
+  - first:
+      213: 3382595240392672282
+    second: Himmel_102
+  - first:
+      213: 2427872761005182811
+    second: Himmel_103
+  - first:
+      213: -5324583147825477265
+    second: Himmel_104
+  - first:
+      213: 8697715197154151451
+    second: Himmel_105
+  - first:
+      213: -6853729393794725153
+    second: Himmel_106
+  - first:
+      213: -4199082963777471384
+    second: Himmel_107
+  - first:
+      213: 1627604988758893225
+    second: Himmel_108
+  - first:
+      213: -1206343350134726888
+    second: Himmel_109
+  - first:
+      213: -1164239077592805353
+    second: Himmel_110
+  - first:
+      213: -3972941231693021718
+    second: Himmel_111
+  - first:
+      213: 1214076534454300290
+    second: Himmel_112
+  - first:
+      213: -5598472999510190123
+    second: Himmel_113
+  - first:
+      213: 8408402424540685386
+    second: Himmel_114
+  - first:
+      213: -8880037370961708315
+    second: Himmel_115
+  - first:
+      213: 4349632159298757727
+    second: Himmel_116
+  - first:
+      213: 105220126641241378
+    second: Himmel_117
+  - first:
+      213: 8189831649150856163
+    second: Himmel_118
+  - first:
+      213: -5129060889848123272
+    second: Himmel_119
+  - first:
+      213: 2104957147360215669
+    second: Himmel_120
+  - first:
+      213: -410720735003740119
+    second: Himmel_121
+  - first:
+      213: -3080303968829935820
+    second: Himmel_122
+  - first:
+      213: 7985535738750432333
+    second: Himmel_123
+  - first:
+      213: -901706635979828170
+    second: Himmel_124
+  - first:
+      213: -926976126660095820
+    second: Himmel_125
+  - first:
+      213: -3344126273994102675
+    second: Himmel_126
+  - first:
+      213: -1872802598010428636
+    second: Himmel_127
+  - first:
+      213: 1131540856856774884
+    second: Himmel_128
+  - first:
+      213: -5687811381927054240
+    second: Himmel_129
+  - first:
+      213: -4095918901051712210
+    second: Himmel_130
+  - first:
+      213: -8370887362323013572
+    second: Himmel_131
+  - first:
+      213: -3922004948772651388
+    second: Himmel_132
+  - first:
+      213: 8529525373165946657
+    second: Himmel_133
+  - first:
+      213: -2475303486124818837
+    second: Himmel_134
+  - first:
+      213: -3513516365570095501
+    second: Himmel_135
+  - first:
+      213: -2734895986623878421
+    second: Himmel_136
+  - first:
+      213: 1515792542064009824
+    second: Himmel_137
+  - first:
+      213: -5319745785515016289
+    second: Himmel_138
+  - first:
+      213: 7313000820311308519
+    second: Himmel_139
+  - first:
+      213: 8902075839282911724
+    second: Himmel_140
+  - first:
+      213: 2707289507698976147
+    second: Himmel_141
+  - first:
+      213: 7438930764639462892
+    second: Himmel_142
+  - first:
+      213: -4954115255623743222
+    second: Himmel_143
+  - first:
+      213: 8989208836190829210
+    second: Himmel_144
+  - first:
+      213: 7460794912917702455
+    second: Himmel_145
+  - first:
+      213: 1509311405882374136
+    second: Himmel_146
+  - first:
+      213: -6946084691717284573
+    second: Himmel_147
+  - first:
+      213: 3904925507908171809
+    second: Himmel_148
+  - first:
+      213: 7188076041560454191
+    second: Himmel_149
+  - first:
+      213: -8065133616147844015
+    second: Himmel_150
+  - first:
+      213: -8024299162046711432
+    second: Himmel_151
+  - first:
+      213: 5391662108438417590
+    second: Himmel_152
+  - first:
+      213: 5382685245373059954
+    second: Himmel_153
+  - first:
+      213: 6528409958338288324
+    second: Himmel_154
+  - first:
+      213: 8290830877902517242
+    second: Himmel_155
+  - first:
+      213: -2399284573934593027
+    second: Himmel_156
+  - first:
+      213: -3619713463735598101
+    second: Himmel_157
+  - first:
+      213: -3087881041369470200
+    second: Himmel_158
+  - first:
+      213: 1364274112830532875
+    second: Himmel_159
+  - first:
+      213: -3195481692834495548
+    second: Himmel_160
+  - first:
+      213: -3699427346063917472
+    second: Himmel_161
+  - first:
+      213: -1073829070504289246
+    second: Himmel_162
+  - first:
+      213: 2703773219757532313
+    second: Himmel_163
+  - first:
+      213: -7574427119792309573
+    second: Himmel_164
+  - first:
+      213: -4355615516543076262
+    second: Himmel_165
+  - first:
+      213: 9099875111953670023
+    second: Himmel_166
+  - first:
+      213: 6187972376979797173
+    second: Himmel_167
+  - first:
+      213: 751448068237856914
+    second: Himmel_168
+  - first:
+      213: -5224849818522560858
+    second: Himmel_169
+  - first:
+      213: -3516772459651442717
+    second: Himmel_170
+  - first:
+      213: 5458491969678247766
+    second: Himmel_171
+  - first:
+      213: -6622033125429654607
+    second: Himmel_172
+  - first:
+      213: -8683212204858595893
+    second: Himmel_173
+  - first:
+      213: 5005249900848592235
+    second: Himmel_174
+  - first:
+      213: 2568591323679767130
+    second: Himmel_175
+  - first:
+      213: -6810568023883567485
+    second: Himmel_176
+  - first:
+      213: -1244101056948738589
+    second: Himmel_177
+  - first:
+      213: -3442087162327392302
+    second: Himmel_178
+  - first:
+      213: 3059530463702585075
+    second: Himmel_179
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Himmel_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 951
+        width: 305
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3963bb1567a45e6a0800000000000000
+      internalID: -6420643821708953965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1164
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0520d7e6503ebf3d0800000000000000
+      internalID: -3171691900084354480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 497
+        width: 341
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4b72e55686cc920800000000000000
+      internalID: 3011897035384665341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1221
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a721ae3fb3a5f270800000000000000
+      internalID: 8283707131402725285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 630
+        width: 329
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed494a4878370a50800000000000000
+      internalID: 6487215877544037871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 403
+        width: 355
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5334578d4ddbe00800000000000000
+      internalID: 1062239113274668484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_6
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1227
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e0a86c52b472340800000000000000
+      internalID: 4838918950249696852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_7
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1221
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8b7c54f515f6be0800000000000000
+      internalID: -1481876282747144007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_8
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1193
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa3068802e8c6ac0800000000000000
+      internalID: -3860554510185252111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_9
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1189
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42763ea82b11aaf70800000000000000
+      internalID: 9199184647389669156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1173
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee36667e1f792fc0800000000000000
+      internalID: -3519141865001173268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1112
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab72ee338a7e2e3e0800000000000000
+      internalID: -2025802172751534150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1148
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50da9833ab28c9090800000000000000
+      internalID: -8026396699640877819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_13
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1175
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c9722eb38c94aa0800000000000000
+      internalID: -6176185254439052157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1109
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4937219bd37cbc0800000000000000
+      internalID: -3762971098556951350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_15
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1162
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0428b2050b0364e0800000000000000
+      internalID: -1989734494219262963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_16
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1162
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab5262706b642310800000000000000
+      internalID: 1379345447862295468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1123
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5719ac7b9f73740800000000000000
+      internalID: 5131844868184831400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1128
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a656e12817740ddb0800000000000000
+      internalID: -4769233452545448598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_19
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1141
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f63efcdefd4d8390800000000000000
+      internalID: -7814504021393262862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1094
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f647e50ae362d410800000000000000
+      internalID: 1500371482640336626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_21
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1104
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997f46d1cbb231420800000000000000
+      internalID: 2599469496869910425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_22
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1090
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e93ea2d9e1eab1a0800000000000000
+      internalID: -6792868693556708892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_23
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1110
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286cdb8e239f95730800000000000000
+      internalID: 3988492942061717122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_24
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1094
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef88a159e5c817e10800000000000000
+      internalID: 2193688831362500862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_25
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1092
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab2b656f34ba0bb0800000000000000
+      internalID: -4968961054472459355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_26
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1076
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90a1409bf7b2c6c0800000000000000
+      internalID: -4124532017633058659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_27
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1080
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe33303f3dc8e1c0800000000000000
+      internalID: -4474100558517289231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_28
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1057
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89438b15f14db4820800000000000000
+      internalID: 2903647615750517912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 303
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20a8a579901aaad0800000000000000
+      internalID: -2690319576110424019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_30
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1002
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2e07290ae81ae00800000000000000
+      internalID: 1054280608084189916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_31
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 996
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4507d22bdb6f37790800000000000000
+      internalID: -7533406457062133676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_32
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 923
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af3e02fdfe92de30800000000000000
+      internalID: 4526855388985704359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_33
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 962
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a80ef292267ee70800000000000000
+      internalID: 9144385497435507309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_34
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 964
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f199ed44159efef0800000000000000
+      internalID: -72456629552311822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_35
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 923
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ace9d14ebb67b110800000000000000
+      internalID: 1276607484275584164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_36
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 953
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3aea92af7e3edf20800000000000000
+      internalID: 3449263082522208830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_37
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 927
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2f39d16e923e600800000000000000
+      internalID: 496286452256338624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_38
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 930
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed15a005d55379a0800000000000000
+      internalID: -6236546685650788882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_39
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 931
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c10623b54ff7c60800000000000000
+      internalID: 7818236150662831221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 915
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f94480efa2ee4f0800000000000000
+      internalID: -797652813449224437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_41
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 897
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399d96ee75af9f540800000000000000
+      internalID: 5042336513386994067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_42
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 913
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee03526151371ad0800000000000000
+      internalID: -2731660423365194005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_43
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 895
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea326cbf658ba6290800000000000000
+      internalID: -7896296312909978706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_44
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 889
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79fb199c789b47a0800000000000000
+      internalID: -6391847585210173057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_45
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 889
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3b261ab10a774f0800000000000000
+      internalID: -831019565694405698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_46
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 898
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6858f559c07eab00800000000000000
+      internalID: 841734190397937774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_47
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 867
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d708332d6e887bae0800000000000000
+      internalID: -1533606623145918339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_48
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 857
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea08e664ebd40040800000000000000
+      internalID: 4613053692359740135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_49
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 825
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aef1c4d00cb9ad70800000000000000
+      internalID: 9054975237560598177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_50
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 837
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5b7db20e1f6f920800000000000000
+      internalID: 3023870144936392124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_51
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 805
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d967986c9f39d81a0800000000000000
+      internalID: -6805620760899914083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_52
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 838
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f1509f19bf54780800000000000000
+      internalID: -8699270500829552850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_53
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 811
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbefd4d34ec446ee0800000000000000
+      internalID: -1268804651846861121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_54
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 773
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765a35ae880957f20800000000000000
+      internalID: 3419798409779062119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_55
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 773
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a309ce7616fab70800000000000000
+      internalID: 8912449286567901806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_56
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 797
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f6782857fff3440800000000000000
+      internalID: 4917930198278041410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_57
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 794
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe135a51feea35e0800000000000000
+      internalID: -1928966770004910402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_58
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 778
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2241fe1cf8e1e8c60800000000000000
+      internalID: 7822223205571957794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_59
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 757
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a372b08c2d6157680800000000000000
+      internalID: -8758068805796944070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_60
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 741
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5a76d7b5d937be0800000000000000
+      internalID: -1480666836203231755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_61
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 751
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0b473bd12e8c720800000000000000
+      internalID: 2866789780014018794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_62
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 726
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a866cabdfddf2640800000000000000
+      internalID: 5057504988390385828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_63
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 714
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4758b1406aff0c5b0800000000000000
+      internalID: -5349995268817582732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_64
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 738
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec2b5d4b4e956790800000000000000
+      internalID: -7537444355077100317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_65
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 730
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4939279860502d0800000000000000
+      internalID: -3313234763458571015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_66
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 733
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0891823e5d5f23010800000000000000
+      internalID: 1167265552430274944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_67
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 685
+        width: 65
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02726269052abf10800000000000000
+      internalID: 2286180483079500303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_68
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 689
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd993999e669dd40800000000000000
+      internalID: 5609627964350766533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_69
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 712
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed245a1eebba4b20800000000000000
+      internalID: 3119512323225824741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa435cefd14eda5b0800000000000000
+      internalID: -5355373564394130257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_71
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 674
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5752be0752ebf5460800000000000000
+      internalID: 7232708594597832053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_72
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 700
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad386349a007e8f20800000000000000
+      internalID: 3426799557214110682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_73
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 678
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7295f2c90b35e8500800000000000000
+      internalID: 400349434882251047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_74
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 682
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f12ad88bbb7fc4b0800000000000000
+      internalID: -5417975781318319623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_75
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 681
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1dbc5d345b66590800000000000000
+      internalID: -7681252811479461388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_76
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 684
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e9c95c4c327f4b0800000000000000
+      internalID: -5406813499599053249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_77
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 682
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7133edf6363f330800000000000000
+      internalID: 3743445047395424208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_78
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 682
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123164cd37594bc00800000000000000
+      internalID: 915520949112410913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 311
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e85e6ba62a37a2d0800000000000000
+      internalID: -3267579066874701599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_80
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 636
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e139d95a7879390800000000000000
+      internalID: -7811625883267817951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_81
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 624
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618f5fd3d3d5d2550800000000000000
+      internalID: 6137664384789772310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_82
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 637
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45496c44340b05350800000000000000
+      internalID: 6003492106248033364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_83
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 600
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00434612bdb91510800000000000000
+      internalID: 1520454921789587466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_84
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 413
+        width: 246
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fe7afd20c242e30800000000000000
+      internalID: 4477752320366997326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_85
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 546
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f96d002537c1600800000000000000
+      internalID: 440353659614043933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_86
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 419
+        width: 243
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12a0a491ae9595c0800000000000000
+      internalID: -4209283859887381989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_87
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 610
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f079f42f8c32f6be0800000000000000
+      internalID: -1481926406415870193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_88
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 598
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6270cb2d223267d50800000000000000
+      internalID: 6734608925250553638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_89
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 574
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c581dac6e6d25ee0800000000000000
+      internalID: -1273719457858878010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_90
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 596
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f025b32d7379eaa60800000000000000
+      internalID: 7687247879974113807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_91
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 586
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23736606907b74ea0800000000000000
+      internalID: -5888536736863733966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_92
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 554
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5377765554e33d50800000000000000
+      internalID: 6715962524513563484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_93
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 535
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af1a556de3a0d860800000000000000
+      internalID: 7552716815103303590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_94
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 510
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b272afaaa0b7c31b0800000000000000
+      internalID: -5675526144645257429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_95
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 527
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c029a02ee5fc41f0800000000000000
+      internalID: -1059201409239932731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_96
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 503
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1ae1f71dcbd6910800000000000000
+      internalID: 1832328231376560563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_97
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 534
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fc8fb0a69861030800000000000000
+      internalID: 3465108051868569497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_98
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 533
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5697eedf0bc26eb20800000000000000
+      internalID: 3163264926960482661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_99
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 527
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a462cba7f544be0800000000000000
+      internalID: -1493964195632887173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_100
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 527
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d93f01ab5d27e50800000000000000
+      internalID: 6805736982035275136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_101
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 536
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d7abb3b62637050800000000000000
+      internalID: 5797085358059060512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_102
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 533
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14488a037461fe20800000000000000
+      internalID: 3382595240392672282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_103
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 535
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f8f87a96981b120800000000000000
+      internalID: 2427872761005182811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_104
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 519
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69c4d086d74b16b0800000000000000
+      internalID: -5324583147825477265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_105
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 511
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cc3eba3ed74b870800000000000000
+      internalID: 8697715197154151451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_106
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 480
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda4630dd69a2e0a0800000000000000
+      internalID: -6853729393794725153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_107
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 489
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c36a9ca4cd9b5c0800000000000000
+      internalID: -4199082963777471384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_108
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 333
+        width: 67
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2a0a52d1a669610800000000000000
+      internalID: 1627604988758893225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_109
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 497
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f90125d15324fe0800000000000000
+      internalID: -1206343350134726888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_110
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 503
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710d3723abac7dfe0800000000000000
+      internalID: -1164239077592805353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_111
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 487
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed3f63dff64dd8c0800000000000000
+      internalID: -3972941231693021718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_112
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 489
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e2946fc2449d010800000000000000
+      internalID: 1214076534454300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_113
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 491
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7549b087a3e42b0800000000000000
+      internalID: -5598472999510190123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_114
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 493
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44e74b9475a0b470800000000000000
+      internalID: 8408402424540685386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_115
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 457
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea32af3f05c3c480800000000000000
+      internalID: -8880037370961708315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_116
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 475
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f542e9e476ffc5c30800000000000000
+      internalID: 4349632159298757727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_117
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 463
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d3cafc521d57100800000000000000
+      internalID: 105220126641241378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_118
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 467
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb63e94e7028a170800000000000000
+      internalID: 8189831649150856163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_119
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 427
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870f04dab4ae1d8b0800000000000000
+      internalID: -5129060889848123272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_120
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 453
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57243db7f5f463d10800000000000000
+      internalID: 2104957147360215669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_121
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 447
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928f638eaa3dc4af0800000000000000
+      internalID: -410720735003740119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_122
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 447
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f6aa94cdf8045d0800000000000000
+      internalID: -3080303968829935820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_123
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 449
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44f769f17252de60800000000000000
+      internalID: 7985535738750432333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_124
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 409
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6345fce879e7c73f0800000000000000
+      internalID: -901706635979828170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_125
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 421
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b05827cf18b223f0800000000000000
+      internalID: -926976126660095820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_126
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 295
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68e78a2fd64791d0800000000000000
+      internalID: -3344126273994102675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_127
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 413
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423e82ba5f77206e0800000000000000
+      internalID: -1872802598010428636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_128
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 429
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e80ac50a6a04bf00800000000000000
+      internalID: 1131540856856774884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_129
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 419
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06470d6fea5d011b0800000000000000
+      internalID: -5687811381927054240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_130
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 161
+        width: 257
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d110ae57f5827c0800000000000000
+      internalID: -4095918901051712210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_131
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 379
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c302ee97b42a4db80800000000000000
+      internalID: -8370887362323013572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_132
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 389
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ef41d574d3299c0800000000000000
+      internalID: -3922004948772651388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_133
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0
+        width: 306
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127cc32b226fe5670800000000000000
+      internalID: 8529525373165946657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_134
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 401
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e7e361894f5add0800000000000000
+      internalID: -2475303486124818837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_135
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 0
+        width: 341
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3764cad1b7b7d3fc0800000000000000
+      internalID: -3513516365570095501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_136
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 401
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea64ab1792bb0ad0800000000000000
+      internalID: -2734895986623878421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_137
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 393
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06269e6394d290510800000000000000
+      internalID: 1515792542064009824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_138
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 337
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ffefea4677c26b0800000000000000
+      internalID: -5319745785515016289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_139
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 290
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8bbc8008ffc7560800000000000000
+      internalID: 7313000820311308519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_140
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 294
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce99b048fc68a8b70800000000000000
+      internalID: 8902075839282911724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_141
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 302
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3952a82a679329520800000000000000
+      internalID: 2707289507698976147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_142
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 296
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce56f070e146c3760800000000000000
+      internalID: 7438930764639462892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_143
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 258
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09043c4c627f3bb0800000000000000
+      internalID: -4954115255623743222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_144
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 244
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9af4f44fc510cc70800000000000000
+      internalID: 8989208836190829210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 284
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737408eb1711a8760800000000000000
+      internalID: 7460794912917702455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_146
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 198
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7701b1ab622f410800000000000000
+      internalID: 1509311405882374136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_147
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 198
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d996a56cc8a9f90800000000000000
+      internalID: -6946084691717284573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_148
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 214
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1287a3d6f05113630800000000000000
+      internalID: 3904925507908171809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_149
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 194
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24f4b3631d21c360800000000000000
+      internalID: 7188076041560454191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_150
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 168
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154327ff4b3e21090800000000000000
+      internalID: -8065133616147844015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_151
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 197
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879bdba3d66f3a090800000000000000
+      internalID: -8024299162046711432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_152
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 202
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0d7621f1803da40800000000000000
+      internalID: 5391662108438417590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_153
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 172
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273923446b323ba40800000000000000
+      internalID: 5382685245373059954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_154
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 178
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca50e2a442999a50800000000000000
+      internalID: 6528409958338288324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_155
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 81
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3383ab1c2fe0370800000000000000
+      internalID: 8290830877902517242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_156
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 157
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbdd87546704bed0800000000000000
+      internalID: -2399284573934593027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_157
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 128
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3475568c134cdc0800000000000000
+      internalID: -3619713463735598101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_158
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 128
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b628c9d84a525d0800000000000000
+      internalID: -3087881041369470200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_159
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 119
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d668fc310eee210800000000000000
+      internalID: 1364274112830532875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_160
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 79
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3065ca45e57a3d0800000000000000
+      internalID: -3195481692834495548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_161
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 113
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e7e7ddd6ef8acc0800000000000000
+      internalID: -3699427346063917472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_162
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 103
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c9a17562ef811f0800000000000000
+      internalID: -1073829070504289246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_163
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 110
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994acdc0b6bb58520800000000000000
+      internalID: 2703773219757532313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_164
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 83
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbab1b36aaa32e690800000000000000
+      internalID: -7574427119792309573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_165
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a583546c3cebd83c0800000000000000
+      internalID: -4355615516543076262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_166
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 91
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f9a6c7330494e70800000000000000
+      internalID: 9099875111953670023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_167
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 95
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b47fc1771810e550800000000000000
+      internalID: 6187972376979797173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_168
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 79
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2909876690ead6a00800000000000000
+      internalID: 751448068237856914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_169
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 83
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6d232c5ca9d77b0800000000000000
+      internalID: -5224849818522560858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_170
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e75992a41ae13fc0800000000000000
+      internalID: -3516772459651442717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_171
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 81
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6578efda68570cb40800000000000000
+      internalID: 5458491969678247766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_172
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb45eb15ffc914a0800000000000000
+      internalID: -6622033125429654607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_173
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 47
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5211c51880f7780800000000000000
+      internalID: -8683212204858595893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_174
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65b3201448367540800000000000000
+      internalID: 5005249900848592235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_175
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 43
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a351d233875a320800000000000000
+      internalID: 2568591323679767130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_176
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 37
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e29c957700c71a0800000000000000
+      internalID: -6810568023883567485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_177
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 53
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5e1e32ea01cbee0800000000000000
+      internalID: -1244101056948738589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_178
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 12
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df1b8b76ff3b30d0800000000000000
+      internalID: -3442087162327392302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Himmel_179
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 0
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe8a742fb2a57a20800000000000000
+      internalID: 3059530463702585075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Himmel_0: -6420643821708953965
+      Himmel_1: -3171691900084354480
+      Himmel_10: -3519141865001173268
+      Himmel_100: 6805736982035275136
+      Himmel_101: 5797085358059060512
+      Himmel_102: 3382595240392672282
+      Himmel_103: 2427872761005182811
+      Himmel_104: -5324583147825477265
+      Himmel_105: 8697715197154151451
+      Himmel_106: -6853729393794725153
+      Himmel_107: -4199082963777471384
+      Himmel_108: 1627604988758893225
+      Himmel_109: -1206343350134726888
+      Himmel_11: -2025802172751534150
+      Himmel_110: -1164239077592805353
+      Himmel_111: -3972941231693021718
+      Himmel_112: 1214076534454300290
+      Himmel_113: -5598472999510190123
+      Himmel_114: 8408402424540685386
+      Himmel_115: -8880037370961708315
+      Himmel_116: 4349632159298757727
+      Himmel_117: 105220126641241378
+      Himmel_118: 8189831649150856163
+      Himmel_119: -5129060889848123272
+      Himmel_12: -8026396699640877819
+      Himmel_120: 2104957147360215669
+      Himmel_121: -410720735003740119
+      Himmel_122: -3080303968829935820
+      Himmel_123: 7985535738750432333
+      Himmel_124: -901706635979828170
+      Himmel_125: -926976126660095820
+      Himmel_126: -3344126273994102675
+      Himmel_127: -1872802598010428636
+      Himmel_128: 1131540856856774884
+      Himmel_129: -5687811381927054240
+      Himmel_13: -6176185254439052157
+      Himmel_130: -4095918901051712210
+      Himmel_131: -8370887362323013572
+      Himmel_132: -3922004948772651388
+      Himmel_133: 8529525373165946657
+      Himmel_134: -2475303486124818837
+      Himmel_135: -3513516365570095501
+      Himmel_136: -2734895986623878421
+      Himmel_137: 1515792542064009824
+      Himmel_138: -5319745785515016289
+      Himmel_139: 7313000820311308519
+      Himmel_14: -3762971098556951350
+      Himmel_140: 8902075839282911724
+      Himmel_141: 2707289507698976147
+      Himmel_142: 7438930764639462892
+      Himmel_143: -4954115255623743222
+      Himmel_144: 8989208836190829210
+      Himmel_145: 7460794912917702455
+      Himmel_146: 1509311405882374136
+      Himmel_147: -6946084691717284573
+      Himmel_148: 3904925507908171809
+      Himmel_149: 7188076041560454191
+      Himmel_15: -1989734494219262963
+      Himmel_150: -8065133616147844015
+      Himmel_151: -8024299162046711432
+      Himmel_152: 5391662108438417590
+      Himmel_153: 5382685245373059954
+      Himmel_154: 6528409958338288324
+      Himmel_155: 8290830877902517242
+      Himmel_156: -2399284573934593027
+      Himmel_157: -3619713463735598101
+      Himmel_158: -3087881041369470200
+      Himmel_159: 1364274112830532875
+      Himmel_16: 1379345447862295468
+      Himmel_160: -3195481692834495548
+      Himmel_161: -3699427346063917472
+      Himmel_162: -1073829070504289246
+      Himmel_163: 2703773219757532313
+      Himmel_164: -7574427119792309573
+      Himmel_165: -4355615516543076262
+      Himmel_166: 9099875111953670023
+      Himmel_167: 6187972376979797173
+      Himmel_168: 751448068237856914
+      Himmel_169: -5224849818522560858
+      Himmel_17: 5131844868184831400
+      Himmel_170: -3516772459651442717
+      Himmel_171: 5458491969678247766
+      Himmel_172: -6622033125429654607
+      Himmel_173: -8683212204858595893
+      Himmel_174: 5005249900848592235
+      Himmel_175: 2568591323679767130
+      Himmel_176: -6810568023883567485
+      Himmel_177: -1244101056948738589
+      Himmel_178: -3442087162327392302
+      Himmel_179: 3059530463702585075
+      Himmel_18: -4769233452545448598
+      Himmel_19: -7814504021393262862
+      Himmel_2: 3011897035384665341
+      Himmel_20: 1500371482640336626
+      Himmel_21: 2599469496869910425
+      Himmel_22: -6792868693556708892
+      Himmel_23: 3988492942061717122
+      Himmel_24: 2193688831362500862
+      Himmel_25: -4968961054472459355
+      Himmel_26: -4124532017633058659
+      Himmel_27: -4474100558517289231
+      Himmel_28: 2903647615750517912
+      Himmel_29: -2690319576110424019
+      Himmel_3: 8283707131402725285
+      Himmel_30: 1054280608084189916
+      Himmel_31: -7533406457062133676
+      Himmel_32: 4526855388985704359
+      Himmel_33: 9144385497435507309
+      Himmel_34: -72456629552311822
+      Himmel_35: 1276607484275584164
+      Himmel_36: 3449263082522208830
+      Himmel_37: 496286452256338624
+      Himmel_38: -6236546685650788882
+      Himmel_39: 7818236150662831221
+      Himmel_4: 6487215877544037871
+      Himmel_40: -797652813449224437
+      Himmel_41: 5042336513386994067
+      Himmel_42: -2731660423365194005
+      Himmel_43: -7896296312909978706
+      Himmel_44: -6391847585210173057
+      Himmel_45: -831019565694405698
+      Himmel_46: 841734190397937774
+      Himmel_47: -1533606623145918339
+      Himmel_48: 4613053692359740135
+      Himmel_49: 9054975237560598177
+      Himmel_5: 1062239113274668484
+      Himmel_50: 3023870144936392124
+      Himmel_51: -6805620760899914083
+      Himmel_52: -8699270500829552850
+      Himmel_53: -1268804651846861121
+      Himmel_54: 3419798409779062119
+      Himmel_55: 8912449286567901806
+      Himmel_56: 4917930198278041410
+      Himmel_57: -1928966770004910402
+      Himmel_58: 7822223205571957794
+      Himmel_59: -8758068805796944070
+      Himmel_6: 4838918950249696852
+      Himmel_60: -1480666836203231755
+      Himmel_61: 2866789780014018794
+      Himmel_62: 5057504988390385828
+      Himmel_63: -5349995268817582732
+      Himmel_64: -7537444355077100317
+      Himmel_65: -3313234763458571015
+      Himmel_66: 1167265552430274944
+      Himmel_67: 2286180483079500303
+      Himmel_68: 5609627964350766533
+      Himmel_69: 3119512323225824741
+      Himmel_7: -1481876282747144007
+      Himmel_70: -5355373564394130257
+      Himmel_71: 7232708594597832053
+      Himmel_72: 3426799557214110682
+      Himmel_73: 400349434882251047
+      Himmel_74: -5417975781318319623
+      Himmel_75: -7681252811479461388
+      Himmel_76: -5406813499599053249
+      Himmel_77: 3743445047395424208
+      Himmel_78: 915520949112410913
+      Himmel_79: -3267579066874701599
+      Himmel_8: -3860554510185252111
+      Himmel_80: -7811625883267817951
+      Himmel_81: 6137664384789772310
+      Himmel_82: 6003492106248033364
+      Himmel_83: 1520454921789587466
+      Himmel_84: 4477752320366997326
+      Himmel_85: 440353659614043933
+      Himmel_86: -4209283859887381989
+      Himmel_87: -1481926406415870193
+      Himmel_88: 6734608925250553638
+      Himmel_89: -1273719457858878010
+      Himmel_9: 9199184647389669156
+      Himmel_90: 7687247879974113807
+      Himmel_91: -5888536736863733966
+      Himmel_92: 6715962524513563484
+      Himmel_93: 7552716815103303590
+      Himmel_94: -5675526144645257429
+      Himmel_95: -1059201409239932731
+      Himmel_96: 1832328231376560563
+      Himmel_97: 3465108051868569497
+      Himmel_98: 3163264926960482661
+      Himmel_99: -1493964195632887173
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

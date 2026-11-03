@@ -24,9 +24,9 @@ public sealed partial class RuneBastionGame {
     int ChooseEnemyKind(){
         if(Wave==TotalWaves&&waveSpawned==0)return 3;
         double roll=random.NextDouble();
-        if(Wave>=7&&roll<.15)return 8;
-        if(Wave>=4&&roll<.30)return 7;
-        if(Wave>=3&&roll<.45)return 6;
+        if(Wave>=4&&roll<.15)return 8;
+        if(Wave>=3&&roll<.30)return 7;
+        if(Wave>=2&&roll<.45)return 6;
         if(Wave>=2&&roll<.65)return 5;
         if(roll<.85)return 4;
         return Wave>=2?1:0;

@@ -41,7 +41,7 @@ public sealed partial class RuneBastionGame {
     void OpenRunePad(){
         if(State!=Phase.Battle||Paused)return;Paused=true;Time.timeScale=0;Play(runeSound,.5f);
         if(classifier==null)try{classifier=new RuneClassifier();}catch(Exception ex){Debug.LogException(ex);}
-        var p=Overlay("ẤN THUẬT","Vẽ tam giác để gọi Lửa, vòng tròn để gọi Băng, tia sét để gọi Sét.");
+        var p=Overlay("CỔ NGỮ NGOẠI LỰC","Dùng cho cả hai nhân vật · Tam giác: Lửa · Vòng tròn: Băng · Tia sét: Sét.");
         var area=Node("RuneDrawing",p.transform,110,205,650,300);var raw=area.gameObject.AddComponent<RawImage>();drawingPad=area.gameObject.AddComponent<RuneDrawingPad>();drawingPad.Initialize();
         recognizedSpell=-1;runeResult=Label("RuneResult",p.transform,"Vẽ một ký hiệu vào bảng bên trái.\nMô hình học sâu xử lý ngay trên máy.",800,210,370,120,21,new Color(.75f,.86f,1),TextAnchor.MiddleCenter);
         Button("Recognize",p.transform,"NHẬN DẠNG",800,350,350,58,new Color(.13f,.25f,.4f),RecognizeRune,21);
@@ -55,10 +55,11 @@ public sealed partial class RuneBastionGame {
         try{var pixels=drawingPad.Rasterize();if(pixels.Sum()<12){runeResult.text="Nét vẽ quá ngắn. Hãy vẽ rõ hơn.";return;}
             var p=classifier.Predict(pixels);int index=Array.IndexOf(p,p.Max());float confidence=p[index];
             if(index==3||confidence<.72f){runeResult.text="Chưa nhận ra ký hiệu rõ ràng.\nHãy thử vẽ lại một hình đơn giản.";recognizedSpell=-1;runeConfirm.interactable=false;return;}
-            recognizedSpell=index;string[] names={"LỬA","BĂNG","SÉT"};runeResult.text=names[index]+"\nĐộ tin cậy: "+(confidence*100).ToString("0")+"%\n"+costs[index]+" năng lượng";runeConfirm.interactable=true;
+            recognizedSpell=index;string[] names={"LỬA","BĂNG","SÉT"};runeResult.text=names[index]+"\nĐộ tin cậy: "+(confidence*100).ToString("0")+"%\n"+costs[index]+" năng lượng\n"+(runeCooldown[index]>0?"Hồi còn "+Mathf.CeilToInt(runeCooldown[index])+" giây":"Cổ ngữ sẵn sàng");runeConfirm.interactable=true;
         }catch(Exception ex){Debug.LogException(ex);runeResult.text="Nhận dạng gặp lỗi. Hãy dùng nút phép và thử lại sau.";}
     }
-    void ConfirmRune(){int spell=recognizedSpell;CloseRunePad();if(spell>=0)CastSpell(spell);}
+    public bool CastRune(int spell){runeCasting=true;try{return CastSpell(spell);}finally{runeCasting=false;}}
+    void ConfirmRune(){int spell=recognizedSpell;CloseRunePad();if(spell>=0)CastRune(spell);}
     void CloseRunePad(){if(overlay)Destroy(overlay);Paused=false;Time.timeScale=1;}
 }
 }

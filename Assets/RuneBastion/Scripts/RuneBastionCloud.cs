@@ -33,7 +33,7 @@ public sealed partial class RuneBastionGame {
         if(auth&&!string.IsNullOrEmpty(cloudToken))request.SetRequestHeader("Authorization","Bearer "+cloudToken);return request;
     }
     IEnumerator Authenticate(){
-        using var r=Request("POST","/session",JsonUtility.ToJson(new RBSessionRequest{device_id=playerId,nickname="Pháp sư "+playerId.Substring(0,4).ToUpperInvariant()}));
+        using var r=Request("POST","/session",JsonUtility.ToJson(new RBSessionRequest{device_id=playerId,nickname=PlayerName}));
         yield return r.SendWebRequest();if(r.result!=UnityWebRequest.Result.Success)yield break;
         var s=JsonUtility.FromJson<RBSession>(r.downloadHandler.text);cloudToken=s.token;PlayerPrefs.SetString("RB.Token",cloudToken);PlayerPrefs.Save();
     }
@@ -58,7 +58,7 @@ public sealed partial class RuneBastionGame {
         Button("Back",p.transform,"QUAY LẠI",700,525,420,58,new Color(.13f,.23f,.37f),ShowMenu);StartCoroutine(LoadLeaderboard());
     }
     IEnumerator LoadLeaderboard(){using var r=Request("GET","/leaderboard");yield return r.SendWebRequest();if(!cloudMessage)yield break;
-        if(r.result!=UnityWebRequest.Result.Success){cloudMessage.text="Đang ở chế độ offline.\nKỷ lục vẫn được lưu trên máy. Kết quả sẽ đồng bộ khi server hoạt động.\n\nBạn có thể đặt địa chỉ server trong Cài đặt → Kết nối server.";yield break;}
+        if(r.result!=UnityWebRequest.Result.Success){cloudMessage.text="Đang ở chế độ offline.\nKỷ lục vẫn được lưu trên máy. Kết quả sẽ đồng bộ khi server hoạt động.\n\nBạn có thể đặt địa chỉ server trong Cài đặt / Kết nối server.";yield break;}
         var data=JsonUtility.FromJson<RBLeaderboard>(r.downloadHandler.text);var text=new StringBuilder();int rank=1;
         foreach(var entry in data.entries){text.AppendLine(rank+".  "+entry.nickname+"     "+entry.score+" điểm     Đợt "+entry.wave);rank++;if(rank>7)break;}
         cloudMessage.text=rank==1?"Chưa có kết quả. Hãy hoàn thành trận đầu tiên!":text.ToString();

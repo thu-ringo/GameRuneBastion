@@ -1,0 +1,47 @@
+PASS player names stripped of markup / control characters
+PASS empty name blocks run
+PASS valid player name starts selected character run
+PASS Himmel idle has four frames
+PASS Himmel move has four frames
+PASS Himmel attack has four frames
+PASS Himmel hurt has four frames
+PASS Himmel defeat has four frames
+PASS Himmel victory has four frames
+PASS Himmel selected actor active and facing enemy
+PASS Himmel skill spends mana
+PASS Himmel skill cooldown blocks spam
+PASS Himmel external ice rune works
+PASS Himmel rune cooldown blocks spam
+PASS Himmel rune cooldown independent of character skill
+PASS Himmel moon slash independent of ice rune cooldown
+PASS Himmel pause
+PASS Himmel resume
+PASS Frieren idle has four frames
+PASS Frieren move has four frames
+PASS Frieren attack has four frames
+PASS Frieren hurt has four frames
+PASS Frieren defeat has four frames
+PASS Frieren victory has four frames
+PASS Frieren selected actor active and facing enemy
+PASS Frieren skill spends mana
+PASS Frieren skill cooldown blocks spam
+PASS Frieren external ice rune works
+PASS Frieren rune cooldown blocks spam
+PASS Frieren rune cooldown independent of character skill
+PASS Frieren pause
+PASS Frieren resume
+PASS shop purchase debits correct currency
+PASS shop rejects buying owned item
+PASS equip compatible weapon
+PASS Himmel cannot equip Frieren staff
+PASS forge upgrades owned item
+PASS cannot dismantle equipped gear
+PASS dismantle unequipped gear
+PASS insufficient funds protected
+PASS daily mode excludes gear and forge advantage
+PASS victory opens wedding
+PASS both heroes appear in wedding
+PASS wedding music available
+PASS skip wedding keeps victory result
+PASS retry resets battle
+PASS loss opens game over without wedding

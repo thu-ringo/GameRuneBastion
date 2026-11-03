@@ -1,0 +1,9 @@
+PASS Himmel releases correct projectile after animation windup
+PASS Himmel real projectile damages enemies
+PASS Himmel live skill reaches enemy group
+PASS Frieren releases correct projectile after animation windup
+PASS Frieren real projectile damages enemies
+PASS Frieren live skill reaches enemy group
+PASS enemies reaching gate damage it without instant loss
+PASS zero gate health triggers defeat ending
+PASS defeat cinematic reaches Game Over

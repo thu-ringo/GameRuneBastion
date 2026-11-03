@@ -2,12 +2,7 @@ PASS wave 1 -> upgrade -> next wave
 PASS wave 2 -> upgrade -> next wave
 PASS wave 3 -> upgrade -> next wave
 PASS wave 4 -> upgrade -> next wave
-PASS wave 5 -> upgrade -> next wave
-PASS wave 6 -> upgrade -> next wave
-PASS wave 7 -> upgrade -> next wave
-PASS wave 8 -> upgrade -> next wave
-PASS wave 9 -> upgrade -> next wave
-PASS wave 10 boss -> victory
+PASS wave 5 boss -> victory
 PASS castle destroyed -> defeat
 PASS retry resets run
 PASS return to main menu
