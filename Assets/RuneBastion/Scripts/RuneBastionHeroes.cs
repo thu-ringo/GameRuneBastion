@@ -123,12 +123,23 @@ public sealed partial class RuneBastionGame {
         State=won?Phase.Won:Phase.Lost;runBest=Mathf.Max(Score,PlayerPrefs.GetInt("RuneBastion.Best",0));runEarned=Score/20+(won?100:0);runLoot="";
         if(!verificationMode){PlayerPrefs.SetInt("RuneBastion.Best",runBest);coins+=runEarned;PlayerPrefs.SetInt("RB.Coins",coins);if(won)runLoot=AwardEquipment();PlayerPrefs.Save();SubmitScore(won);}
     }
-    void ShowRunResults(){
+    void ShowVictory(){
+        Play(runeSound,.65f);
+        ShowRunResults(true);
+    }
+    void ShowRunResults(){ShowRunResults(false);}
+    void ShowRunResults(bool beforeWedding){
         endingActive=false;StopEndingMusic();if(wizard){wizard.gameObject.SetActive(true);PlaceHero(false);}bool won=State==Phase.Won;
-        var p=Overlay(won?"THÀNH ĐÃ ĐƯỢC BẢO VỆ":"GAME OVER — THÀNH THẤT THỦ",won?"Lời hẹn đã thành hiện thực. Cảm ơn người giữ thành!":"Cổng thành đã vỡ. Hãy thử bộ trang bị và cách phối hợp khác.");
+        var p=Overlay(won?"CHIẾN THẮNG":"GAME OVER — THÀNH THẤT THỦ",won?"Bạn đã bảo vệ thành công thành trì!":"Cổng thành đã vỡ. Hãy thử bộ trang bị và cách phối hợp khác.");
         var name=Heading(p.transform,PlayerName+" · "+HeroName,200,200,870,40,25,new Color(.7f,.86f,1));name.supportRichText=false;
         Heading(p.transform,Score.ToString("N0")+" ĐIỂM",250,250,770,65,42,new Color(1,.83f,.4f));
-        Label("Stats",p.transform,"Đợt "+Wave+" / "+TotalWaves+"   •   "+Kills+" quái   •   +"+runEarned+" tinh thạch\nKỷ lục: "+runBest+(runLoot.Length>0?"\n"+runLoot:""),150,327,970,100,21,new Color(.77f,.86f,.96f),TextAnchor.MiddleCenter);
+        Label("Stats",p.transform,(won ? Wave+" / "+TotalWaves+" đợt đã vượt qua   •   Máu cổng: "+Mathf.CeilToInt(Health)+" / 1000" : "Đợt "+Wave+" / "+TotalWaves)+"\n"+Kills+" quái   •   +"+runEarned+" tinh thạch   •   Kỷ lục: "+runBest+(runLoot.Length>0?"\n"+runLoot:""),150,327,970,100,21,new Color(.77f,.86f,.96f),TextAnchor.MiddleCenter);
+        if(won && RescueSucceeded)
+            Label("RescueResult",p.transform,"Golem và đứa trẻ đã an toàn.",175,425,924,29,20,RescueGold,TextAnchor.MiddleCenter);
+        if(beforeWedding){
+            Button("ContinueToWedding",p.transform,"ĐẾN LỄ CƯỚI",412,460,450,65,new Color(.38f,.24f,.12f),ShowWedding,24);
+            return;
+        }
         Button("Retry",p.transform,"CHƠI LẠI",160,460,450,65,new Color(.15f,.28f,.43f),StartRun,24);
         Button("Home",p.transform,"VỀ MENU",670,460,450,65,new Color(.1f,.16f,.28f),ShowMenu,24);
     }
@@ -141,7 +152,8 @@ public sealed partial class RuneBastionGame {
         HeroImage(bg.transform,"Himmel",440,290,520,350,"idle",true);HeroImage(bg.transform,"Frieren",650,290,520,350,"idle");
         Heading(bg.transform,"Himmel  &  Frieren",400,655,800,55,39,new Color(.25f,.12f,.28f));
         Label("WeddingLine",bg.transform,"Sau trận chiến cuối cùng, họ chọn cùng nhau đón những ngày bình yên.",200,720,1200,36,21,new Color(.25f,.12f,.28f),TextAnchor.MiddleCenter);
-        Button("WeddingResults",bg.transform,"XEM KẾT QUẢ / BỎ QUA",390,795,420,60,new Color(.24f,.15f,.31f,.95f),ShowRunResults,20);
+        if(RescueSucceeded) AddWeddingGuests(bg.transform);
+        Button("WeddingResults",bg.transform,"XEM LẠI KẾT QUẢ",390,795,420,60,new Color(.24f,.15f,.31f,.95f),ShowRunResults,20);
         Button("WeddingHome",bg.transform,"VỀ MENU",850,795,350,60,new Color(.18f,.25f,.38f,.95f),ShowMenu,21);
         if(!weddingMusic)weddingMusic=Resources.Load<AudioClip>("Audio/WeddingPromise");
         StartCoroutine(FadeMusic(weddingMusic));StartCoroutine(WeddingParticles(bg.transform));

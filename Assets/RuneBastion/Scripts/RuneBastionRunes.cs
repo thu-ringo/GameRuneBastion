@@ -58,7 +58,14 @@ public sealed partial class RuneBastionGame {
             recognizedSpell=index;string[] names={"LỬA","BĂNG","SÉT"};runeResult.text=names[index]+"\nĐộ tin cậy: "+(confidence*100).ToString("0")+"%\n"+costs[index]+" năng lượng\n"+(runeCooldown[index]>0?"Hồi còn "+Mathf.CeilToInt(runeCooldown[index])+" giây":"Cổ ngữ sẵn sàng");runeConfirm.interactable=true;
         }catch(Exception ex){Debug.LogException(ex);runeResult.text="Nhận dạng gặp lỗi. Hãy dùng nút phép và thử lại sau.";}
     }
-    public bool CastRune(int spell){runeCasting=true;try{return CastSpell(spell);}finally{runeCasting=false;}}
+    public bool CastRune(int spell){
+        runeCasting=true;
+        try {
+            if(!CastSpell(spell))return false;
+            CaptureMirrorRune(spell);
+            return true;
+        } finally { runeCasting=false; }
+    }
     void ConfirmRune(){int spell=recognizedSpell;CloseRunePad();if(spell>=0)CastRune(spell);}
     void CloseRunePad(){if(overlay)Destroy(overlay);Paused=false;Time.timeScale=1;}
 }

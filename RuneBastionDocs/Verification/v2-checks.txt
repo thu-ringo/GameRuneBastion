@@ -39,7 +39,45 @@ PASS cannot dismantle equipped gear
 PASS dismantle unequipped gear
 PASS insufficient funds protected
 PASS daily mode excludes gear and forge advantage
-PASS victory opens wedding
+PASS AR menu opens desktop simulation without a physical AR session
+PASS simulation prepares a live battlefield texture and placement outline
+PASS screen ray locates the simulated desk
+PASS placement rejects points outside the desk
+PASS AR renders battlefield actors on a transparent surface
+PASS placing the simulated board starts the campaign and displays AR status
+PASS tapping the AR board maps to the same battlefield coordinates
+PASS board stays anchored and selectable after orbiting and zooming
+PASS returning to menu releases the simulated room and restores the normal view
+PASS wave two first lethal hit makes a marked enemy dormant
+PASS bell defeats dormant enemies once and leaves active enemies alone
+PASS bell light stays flat along the bridge
+PASS bell light expires with battlefield effects
+PASS used bell cannot clear a second group
+PASS unpurged enemy revives faster at half health
+PASS revived enemy dies for good and scores once
+PASS wave four mirror copies an actually cast ice rune
+PASS focus mirror overrides normal target selection
+PASS broken mirror reflects ice onto nearby enemies without harming gate
+PASS mirror can copy lightning
+PASS expired copy strikes the gate once
+PASS spent mirror cannot copy another rune
+PASS daily challenge leaves wave encounters disabled
+PASS wave three spawns the escort and four pursuers
+PASS open gate shelters both while bats can damage the gate
+PASS sheltered golem blocks the first Nox hit
+PASS golem does not block the next Nox hit
+PASS victory confirms the rescue
+PASS golem, child and bouquet appear at the wedding
+PASS closed gate prioritizes pursuers
+PASS defeating the bats lets the escort leave safely
+PASS outside golem distracts Nox
+PASS Nox moves again after the distraction
+PASS failed escort retreats and the battle can continue
+PASS failed rescue is omitted from victory
+PASS failed rescue does not add wedding guests
+PASS starting a new run resets the rescue
+PASS victory waits on results before wedding
+PASS continue button opens wedding
 PASS both heroes appear in wedding
 PASS wedding music available
 PASS skip wedding keeps victory result

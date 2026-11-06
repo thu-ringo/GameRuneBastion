@@ -36,6 +36,109 @@ public sealed partial class RuneBastionGame {
         }finally{SelectedHero=previous;verificationMode=false;ShowMenu();}
         File.WriteAllLines("RuneBastionDocs/Verification/v2-live-combat.txt",lines);Debug.Log("RUNE BASTION live combat: "+lines.Count+" checks passed");
     }
+    void VerifyWaveEncounters(Action<bool,string> check) {
+        StartRun();
+        BeginWave();
+        SpawnWaveEnemy();
+        var first = enemies[0];
+        waveSpawned++;
+        SpawnWaveEnemy();
+        var second = enemies[1];
+        Damage(first, 1000, Color.white);
+        TickWaveEncounter();
+        check(dormantEnemies.Count == 1 && !first.alive && Kills == 0 && encounterButton.interactable,
+            "wave two first lethal hit makes a marked enemy dormant");
+        encounterButton.onClick.Invoke();
+        check(bellUsed && dormantEnemies.Count == 0 && Kills == 1 && second.alive,
+            "bell defeats dormant enemies once and leaves active enemies alone");
+        var bellStreaks = effects.Where(fx => fx.root && fx.root.name == "Bell reflection on the bridge").ToArray();
+        check(bellStreaks.Length == 3 && bellStreaks.All(fx => fx.scale.y < .03f && fx.velocity.x < 0),
+            "bell light stays flat along the bridge");
+        TickEffects(.7f);
+        check(bellStreaks.All(fx => !effects.Contains(fx)), "bell light expires with battlefield effects");
+        Damage(second, 1000, Color.white);
+        RingTheBell();
+        check(dormantEnemies.Count == 1 && Kills == 1, "used bell cannot clear a second group");
+        elapsed += WakeDelay + .05f;
+        TickWaveEncounter();
+        check(second.alive && second.health == second.maxHealth * .5f && second.speed > second.baseSpeed,
+            "unpurged enemy revives faster at half health");
+        Damage(second, 1000, Color.white);
+        check(dormantEnemies.Count == 0 && Kills == 2, "revived enemy dies for good and scores once");
+
+        StartRun();
+        Wave = 3;
+        BeginWave();
+        waveSpawned = 3;
+        SpawnWaveEnemy();
+        var witness = Spawn(7);
+        witness.root.transform.position = new Vector3(mirrorBearer.root.transform.position.x + 2, Ground, 0);
+        check(CastRune(1) && mirrorSpell == 1 && encounterButton.gameObject.activeSelf, "wave four mirror copies an actually cast ice rune");
+        witness.frozenUntil = 0;
+        encounterButton.onClick.Invoke();
+        check(PickTarget() == mirrorBearer, "focus mirror overrides normal target selection");
+        float gateBefore = Health;
+        Damage(mirrorBearer, 1000, Color.white);
+        check(mirrorSpell < 0 && witness.frozenUntil > elapsed && Health == gateBefore, "broken mirror reflects ice onto nearby enemies without harming gate");
+
+        StartRun();
+        Wave = 3;
+        BeginWave();
+        waveSpawned = 3;
+        SpawnWaveEnemy();
+        check(CastRune(2) && mirrorSpell == 2, "mirror can copy lightning");
+        gateBefore = Health;
+        elapsed += MirrorDelay + .05f;
+        TickWaveEncounter();
+        float gateAfter = Health;
+        TickWaveEncounter();
+        check(gateAfter < gateBefore && Health == gateAfter && mirrorSpell < 0, "expired copy strikes the gate once");
+        Mana = 100;
+        check(CastRune(0) && mirrorSpell < 0, "spent mirror cannot copy another rune");
+
+        dailyMode = true;
+        StartRun();
+        BeginWave();
+        SpawnWaveEnemy();
+        check(!encounterCard && !enemies[0].feignsDeath, "daily challenge leaves wave encounters disabled");
+        dailyMode = false;
+        StartRun();
+    }
+
+    void VerifyArSimulation(Action<bool,string> check) {
+        ShowMenu();
+        BeginAr();
+        check(arMode && arWaiting && arSimulated && arCamera && arSessionObject == null,
+            "AR menu opens desktop simulation without a physical AR session");
+        check(gameCamera.targetTexture == arTexture && arTexture.IsCreated() && simulationGuide,
+            "simulation prepares a live battlefield texture and placement outline");
+        Vector3 screen = arCamera.WorldToScreenPoint(DeskCenter);
+        check(TrySimulationPlacement(screen, out var position) && Vector3.Distance(position, DeskCenter) < .01f,
+            "screen ray locates the simulated desk");
+        var offDesk = arCamera.WorldToScreenPoint(DeskCenter + Vector3.right * 1.2f);
+        check(!TrySimulationPlacement(offDesk, out _), "placement rejects points outside the desk");
+        PlaceArBoard(position, false);
+        Physics.SyncTransforms();
+        check(!scenery.gameObject.activeSelf && gameCamera.backgroundColor.a == 0 &&
+              arMaterial.renderQueue == (int)UnityEngine.Rendering.RenderQueue.Transparent,
+            "AR renders battlefield actors on a transparent surface");
+        check(State == Phase.Battle && Wave == 1 && !arWaiting && arBoard && simulationBadge,
+            "placing the simulated board starts the campaign and displays AR status");
+        screen = arCamera.WorldToScreenPoint(arBoard.transform.position + new Vector3(BoardWidth * .25f, 0, BoardHeight * .25f));
+        check(TryArScreenToGame(screen, out var gamePoint) && Vector2.Distance(gamePoint, new Vector2(4.445f, 2.5f)) < .05f,
+            "tapping the AR board maps to the same battlefield coordinates");
+        simulationYaw = 28;
+        simulationDistance = .94f;
+        SetSimulationCameraPose();
+        screen = arCamera.WorldToScreenPoint(arBoard.transform.position);
+        check(TryArScreenToGame(screen, out gamePoint) && gamePoint.sqrMagnitude < .01f,
+            "board stays anchored and selectable after orbiting and zooming");
+        ShowMenu();
+        check(!arMode && !arSimulated && !arCamera && gameCamera.targetTexture == null && scenery.gameObject.activeSelf && simulationMaterials.Count == 0,
+            "returning to menu releases the simulated room and restores the normal view");
+        StartRun();
+    }
+
     public void VerificationV2(){
         var lines=new List<string>();Action<bool,string> check=(ok,msg)=>{if(!ok)throw new Exception("FAIL "+msg);lines.Add("PASS "+msg);};
         Hero previous=SelectedHero;string previousName=PlayerName;int previousCoins=coins;var levels=(int[])gearLevels.Clone();var slots=(int[,])equipped.Clone();
@@ -59,7 +162,14 @@ public sealed partial class RuneBastionGame {
             equipped[0,0]=0;check(SalvageGear(1)&&gearLevels[1]==-1,"dismantle unequipped gear");
             coins=0;gearLevels[1]=-1;check(!BuyGear(1)&&coins==0,"insufficient funds protected");gearLevels[1]=0;equipped[0,0]=1;
             dailyMode=false;StartRun();float geared=damageMultiplier;dailyMode=true;StartRun();check(geared>damageMultiplier&&gateGuard==0,"daily mode excludes gear and forge advantage");dailyMode=false;
-            SaveRunResult(true);ShowWedding();check(State==Phase.Won&&endingActive&&overlay.name=="WeddingEnding","victory opens wedding");
+            VerifyArSimulation(check);
+            VerifyWaveEncounters(check);
+            VerifyRescue(check);
+            EndRun(true);
+            var continueButton=overlay.GetComponentsInChildren<UnityEngine.UI.Button>().Single(b=>b.name=="ContinueToWedding");
+            check(State==Phase.Won&&!endingActive&&overlay.name=="ModalShade","victory waits on results before wedding");
+            continueButton.onClick.Invoke();
+            check(State==Phase.Won&&endingActive&&overlay.name=="WeddingEnding","continue button opens wedding");
             check(overlay.GetComponentsInChildren<HeroPortrait>().Select(a=>a.hero).Distinct().Count()==2,"both heroes appear in wedding");
             check(Resources.Load<AudioClip>("Audio/WeddingPromise")!=null,"wedding music available");ShowRunResults();check(!endingActive&&State==Phase.Won,"skip wedding keeps victory result");
             StartRun();check(Wave==1&&Health==1000,"retry resets battle");SaveRunResult(false);ShowRunResults();check(State==Phase.Lost&&!endingActive,"loss opens game over without wedding");

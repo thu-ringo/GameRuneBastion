@@ -101,7 +101,7 @@ public sealed partial class RuneBastionGame {
         status=Label("Status",hudRoot,"",245,870,310,24,13,new Color(.6f,.73f,.87f));
         if(!FindAnyObjectByType<UnityEngine.EventSystems.EventSystem>())new GameObject("EventSystem",typeof(UnityEngine.EventSystems.EventSystem),typeof(UnityEngine.InputSystem.UI.InputSystemUIInputModule));
     }
-    void FocusAttack(){if(State==Phase.Battle&&!Paused){targetX=Gate;autoClock=0;ShowTip("Ưu tiên quái gần cổng thành");}}
+    void FocusAttack(){if(State==Phase.Battle&&!Paused){targetX=Gate;mirrorFocused=false;autoClock=0;ShowTip("Ưu tiên quái gần cổng thành");}}
     void ShowTip(string message){tip.text=message;StartCoroutine(ClearTipAfter(2.5f));if(State==Phase.Menu){var toast=RoundPanel("MenuToast",uiRoot,350,825,900,55,new Color(.08f,.12f,.23f,.98f));Label("Toast",toast.transform,message,15,3,870,48,19,new Color(1,.84f,.55f),TextAnchor.MiddleCenter);Destroy(toast.gameObject,2.7f);}}
     GameObject Overlay(string title,string subtitle){
         if(overlay)Destroy(overlay);var shade=Panel("ModalShade",uiRoot,0,0,1600,900,new Color(.01f,.02f,.07f,.82f));overlay=shade.gameObject;
@@ -122,7 +122,12 @@ public sealed partial class RuneBastionGame {
         Button("Play",p.transform,"BẮT ĐẦU CHƠI",190,380,470,70,new Color(.25f,.3f,.5f),()=>ShowCharacterSelection(),27);
         Button("Daily",p.transform,"THỬ THÁCH NGÀY",190,470,225,57,new Color(.1f,.17f,.29f),()=>ShowCharacterSelection(true),18);
         Button("Forge",p.transform,"TÚI ĐỒ / SHOP",435,470,225,57,new Color(.1f,.17f,.29f),()=>ShowArmory(),18);
-        Button("AR",p.transform,"CHƠI TRONG AR",190,545,225,53,new Color(.1f,.17f,.29f),()=>ShowCharacterSelection(false,true),18);
+#if UNITY_ANDROID && !UNITY_EDITOR
+        const string arLabel="CHƠI TRONG AR";
+#else
+        const string arLabel="AR MÔ PHỎNG";
+#endif
+        Button("AR",p.transform,arLabel,190,545,225,53,new Color(.1f,.17f,.29f),()=>ShowCharacterSelection(false,true),18);
         Button("Settings",p.transform,"CÀI ĐẶT",435,545,225,53,new Color(.1f,.17f,.29f),()=>ShowSettings(ShowMenu),18);
         Button("Help",p.transform,"HƯỚNG DẪN",190,615,225,53,new Color(.1f,.17f,.29f),ShowHelp,18);
         Button("Scores",p.transform,"BẢNG ĐIỂM",435,615,225,53,new Color(.1f,.17f,.29f),ShowLeaderboard,18);
@@ -173,7 +178,7 @@ public sealed partial class RuneBastionGame {
             skillRects[i].localScale=Vector3.one*(Mana<costs[i]? .92f:1);}
     }
     void ShowUpgrades(int[] previewChoices=null){
-        State=Phase.Upgrade;Score+=Wave*50;Play(coinSound,.5f);
+        State=Phase.Upgrade;ClearWaveEncounter();Score+=Wave*50;Play(coinSound,.5f);
         var p=Overlay("ĐỢT "+Wave+" HOÀN THÀNH","Chọn một nâng cấp để chuẩn bị cho đợt tiếp theo.");
         int[] choices=previewChoices??System.Linq.Enumerable.Range(0,6).OrderBy(_=>random.Next()).Take(3).ToArray();
         string[] titles={"SỨC MẠNH","TỐC ĐỘ TẤN CÔNG","HỒI NĂNG LƯỢNG","SỬA CỔNG THÀNH","SÉT LAN","BĂNG VĨNH CỬU"};
@@ -195,12 +200,13 @@ public sealed partial class RuneBastionGame {
         }
         Label("UpgradeHint",p.transform,"Chạm vào thẻ nâng cấp để nhận hiệu ứng và bắt đầu đợt tiếp theo.",90,548,1100,35,18,new Color(.65f,.78f,.9f),TextAnchor.MiddleCenter);
     }
-    void EndRun(bool won){if(State==Phase.Won||State==Phase.Lost)return;SaveRunResult(won);if(arMode)ExitAr();if(won)ShowWedding();else StartCoroutine(DefeatEnding());}
+    void EndRun(bool won){if(State==Phase.Won||State==Phase.Lost)return;SaveRunResult(won);ClearRescueActors();ClearWaveEncounter();if(arMode)ExitAr();if(won)ShowVictory();else StartCoroutine(DefeatEnding());}
     void CreateAudio(){
         audioSource=gameObject.AddComponent<AudioSource>();audioSource.playOnAwake=false;audioSource.spatialBlend=0;
         musicSource=gameObject.AddComponent<AudioSource>();musicSource.playOnAwake=false;musicSource.loop=true;musicSource.spatialBlend=0;
         musicSource.clip=Resources.Load<AudioClip>("Audio/TwilightTheme");musicSource.volume=musicVolume;if(musicSource.clip)musicSource.Play();
         clickSound=Resources.Load<AudioClip>("Audio/click");coinSound=Resources.Load<AudioClip>("Audio/coin");runeSound=Resources.Load<AudioClip>("Audio/rune");gateSound=Resources.Load<AudioClip>("Audio/gate");hitSound=Resources.Load<AudioClip>("Audio/hit");
+        bellSound=CreateBellSound();
         fireSound=Tone("Fire",150,.24f,.8f);iceSound=Tone("Ice",950,.26f,.15f);lightningSound=Tone("Lightning",80,.3f,.9f);
     }
     void Play(AudioClip clip,float volume){if(audioSource&&clip)audioSource.PlayOneShot(clip,volume*sfxVolume);}

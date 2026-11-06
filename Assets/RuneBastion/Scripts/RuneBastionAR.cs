@@ -11,14 +11,15 @@ using UnityEngine.InputSystem.XR;
 namespace RuneBastion {
 public sealed partial class RuneBastionGame {
     bool arMode,arWaiting,arStarting;GameObject arRoot,arSessionObject,arBoard;Camera arCamera;ARRaycastManager arRaycast;
+    Color battlefieldClearColor;
+    bool battlefieldAllowHdr;
     RenderTexture arTexture;Material arMaterial;readonly List<ARRaycastHit> arHits=new List<ARRaycastHit>();
     void BeginAr(){
 #if UNITY_ANDROID && !UNITY_EDITOR
         if(arStarting)return;arStarting=true;Overlay("ĐANG MỞ AR","Đang kiểm tra camera và khả năng hỗ trợ của thiết bị…");
         StartCoroutine(StartAr());
 #else
-        var p=Overlay("SÂN KHẤU AR","Chế độ này cần điện thoại Android hỗ trợ ARCore và quyền camera.\nTrong Editor, bạn có thể chơi đầy đủ ở chế độ thường.");
-        Button("Back",p.transform,"QUAY LẠI",440,350,390,65,new Color(.15f,.25f,.4f),ShowMenu);
+        BeginArSimulation();
 #endif
     }
     IEnumerator StartAr(){
@@ -46,7 +47,7 @@ public sealed partial class RuneBastionGame {
         if(ARSession.state==ARSessionState.Unsupported){ArFailure("Thiết bị chưa hỗ trợ ARCore.");yield break;}
         if(overlay)Destroy(overlay);hudRoot.gameObject.SetActive(false);
         arStarting=false;arMode=true;arWaiting=true;
-        arTexture=new RenderTexture(1280,720,16,RenderTextureFormat.ARGB32);arTexture.Create();gameCamera.targetTexture=arTexture;
+        CreateArTexture();
         arRoot=new GameObject("AR Origin");var origin=arRoot.AddComponent<XROrigin>();
         var offset=new GameObject("Camera Offset");offset.transform.SetParent(arRoot.transform,false);origin.CameraFloorOffsetObject=offset;
         var cameraObject=new GameObject("AR Camera",typeof(Camera));cameraObject.transform.SetParent(offset.transform,false);arCamera=cameraObject.GetComponent<Camera>();
@@ -65,25 +66,78 @@ public sealed partial class RuneBastionGame {
         Button("CancelAR",uiRoot,"HỦY AR",35,790,230,60,new Color(.16f,.23f,.35f),()=>{var b=GameObject.Find("CancelAR");if(b)Destroy(b);ExitAr();ShowMenu();});
     }
     void ArFailure(string message){ExitAr();var p=Overlay("CHƯA THỂ MỞ AR",message);Button("Back",p.transform,"QUAY LẠI",440,350,390,65,new Color(.15f,.25f,.4f),ShowMenu);}
+    void CreateArTexture(){
+        arTexture=new RenderTexture(1280,720,16,RenderTextureFormat.ARGB32);
+        arTexture.Create();
+        battlefieldClearColor=gameCamera.backgroundColor;
+        battlefieldAllowHdr=gameCamera.allowHDR;
+        gameCamera.allowHDR=false;
+        gameCamera.backgroundColor=Color.clear;
+        gameCamera.targetTexture=arTexture;
+        scenery.gameObject.SetActive(false);
+    }
     void TickAr(){
+        if(arSimulated){TickArSimulation();return;}
         if(!arWaiting||!arRaycast)return;
         if(Touchscreen.current==null||!Touchscreen.current.primaryTouch.press.wasPressedThisFrame)return;
         var screen=Touchscreen.current.primaryTouch.position.ReadValue();if(screen.y<Screen.height*.18f||screen.y>Screen.height*.85f)return;
         if(!arRaycast.Raycast(screen,arHits,TrackableType.PlaneWithinPolygon))return;
-        var pose=arHits[0].pose;arBoard=GameObject.CreatePrimitive(PrimitiveType.Quad);arBoard.name="Anchored 2D defense theater";arBoard.layer=28;
-        arBoard.transform.position=pose.position+Vector3.up*.01f;arBoard.transform.rotation=Quaternion.Euler(90,0,0);arBoard.transform.localScale=new Vector3(.8f,.45f,1);
-        arBoard.AddComponent<ARAnchor>();
-        arMaterial=new Material(Resources.Load<Material>("ARBoardMaterial"));arMaterial.SetTexture("_BaseMap",arTexture);arMaterial.mainTexture=arTexture;arBoard.GetComponent<Renderer>().sharedMaterial=arMaterial;
-        arWaiting=false;var cancel=GameObject.Find("CancelAR");if(cancel)Destroy(cancel);dailyMode=false;StartRun();ShowTip("Sân khấu đã đặt. Dùng các nút phép để giữ thành!");
+        PlaceArBoard(arHits[0].pose.position, true);
+    }
+    void PlaceArBoard(Vector3 position,bool useAnchor){
+        arBoard=GameObject.CreatePrimitive(PrimitiveType.Quad);
+        arBoard.name="Anchored 2D defense theater";
+        arBoard.layer=28;
+        arBoard.transform.position=position+Vector3.up*.012f;
+        arBoard.transform.rotation=Quaternion.Euler(90,0,0);
+        arBoard.transform.localScale=useAnchor ? new Vector3(.8f,.45f,1) : new Vector3(BoardWidth,BoardHeight,1);
+        if(useAnchor)arBoard.AddComponent<ARAnchor>();
+        arMaterial=new Material(Resources.Load<Material>("ARBoardMaterial"));
+        arMaterial.SetTexture("_BaseMap",arTexture);
+        arMaterial.mainTexture=arTexture;
+        // Sprite blending already premultiplies the RGB stored in the render texture.
+        arMaterial.SetFloat("_Surface",1);
+        arMaterial.SetFloat("_SrcBlend",(float)UnityEngine.Rendering.BlendMode.One);
+        arMaterial.SetFloat("_DstBlend",(float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        arMaterial.SetFloat("_DstBlendAlpha",(float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        arMaterial.SetFloat("_ZWrite",0);
+        arMaterial.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        arMaterial.SetOverrideTag("RenderType","Transparent");
+        arMaterial.renderQueue=(int)UnityEngine.Rendering.RenderQueue.Transparent;
+        arBoard.GetComponent<Renderer>().sharedMaterial=arMaterial;
+
+        arWaiting=false;
+        var cancel=GameObject.Find("CancelAR");
+        if(cancel)Destroy(cancel);
+        if(simulationGuide)simulationGuide.SetActive(false);
+        dailyMode=false;
+        StartRun();
+        if(arSimulated)ShowSimulationBadge();
+        ShowTip("Sân khấu đã đặt. Dùng các nút phép để giữ thành!");
     }
     bool TryArScreenToGame(Vector2 screen,out Vector3 point){point=Vector3.zero;if(!arCamera||!arBoard)return false;
         if(!Physics.Raycast(arCamera.ScreenPointToRay(screen),out var hit,30,1<<28))return false;
         point=new Vector3((hit.textureCoord.x-.5f)*17.78f,(hit.textureCoord.y-.5f)*10,0);return true;
     }
-    void ExitAr(){arStarting=false;arWaiting=false;arMode=false;if(gameCamera)gameCamera.targetTexture=null;
-        if(arBoard)Destroy(arBoard);if(arRoot)Destroy(arRoot);if(arSessionObject)Destroy(arSessionObject);
-        if(arTexture){arTexture.Release();Destroy(arTexture);}if(arMaterial)Destroy(arMaterial);
-        var manager=XRGeneralSettings.Instance?.Manager;if(manager!=null&&manager.activeLoader!=null){manager.StopSubsystems();manager.DeinitializeLoader();}
+    void ExitAr(){
+        arStarting=false;arWaiting=false;arMode=false;
+        if(gameCamera && arTexture){
+            gameCamera.targetTexture=null;
+            gameCamera.backgroundColor=battlefieldClearColor;
+            gameCamera.allowHDR=battlefieldAllowHdr;
+        }
+        if(scenery)scenery.gameObject.SetActive(true);
+        if(arCamera)arCamera.enabled=false;
+        if(arBoard)Destroy(arBoard);
+        if(arRoot)Destroy(arRoot);
+        if(arSessionObject)Destroy(arSessionObject);
+        if(arTexture){arTexture.Release();Destroy(arTexture);}
+        if(arMaterial)Destroy(arMaterial);
+        arBoard=arRoot=arSessionObject=null;
+        arCamera=null;arRaycast=null;arTexture=null;arMaterial=null;
+        if(arSimulated){ReleaseSimulationRoom();return;}
+        var manager=XRGeneralSettings.Instance?.Manager;
+        if(manager!=null&&manager.activeLoader!=null){manager.StopSubsystems();manager.DeinitializeLoader();}
     }
 }
 }

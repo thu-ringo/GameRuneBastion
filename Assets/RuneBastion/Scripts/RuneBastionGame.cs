@@ -29,7 +29,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     readonly float[] cooldown = new float[3];
     readonly int[] costs = { 30, 25, 40 };
     readonly Color[] spellColors = { new Color(1,.38f,.13f), new Color(.25f,.9f,1), new Color(1,.85f,.24f) };
-    Camera gameCamera; Transform world; Canvas canvas; RectTransform uiRoot;
+    Camera gameCamera; Transform world, scenery; Canvas canvas; RectTransform uiRoot;
     Font font; Sprite disk, square; Material spriteMaterial; SpriteRenderer wizard;
     GameObject overlay; Text hpText, manaText, waveText, scoreText, tip, status;
     Image hpFill, manaFill, progress; Text[] skillLabels = new Text[3];
@@ -43,7 +43,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     sealed class Enemy {
         public GameObject root; public Transform art; public SpriteRenderer body; public Image unused;
         public Transform hp; public float health,maxHealth,speed,attackClock,frozenUntil,burnUntil,burnTick,seed;
-        public int kind; public bool alive=true; public Vector3 scale; public EnemySpriteAnimator animator; public float baseSpeed; public float hitUntil;
+        public int kind; public bool alive=true,pursuer,feignsDeath; public GameObject encounterMark; public Vector3 scale; public EnemySpriteAnimator animator; public float baseSpeed; public float hitUntil;
     }
     sealed class Shot { public Transform root; public Enemy target; public Vector3 from; public float t; public bool basic; public float damage; public bool blade,piercing; public System.Collections.Generic.HashSet<Enemy> hit=new System.Collections.Generic.HashSet<Enemy>(); }
     sealed class Visual { public Transform root; public float time,life; public Vector3 velocity,scale; public SpriteRenderer sprite; public TextMesh text; }
@@ -60,8 +60,10 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         var cam=new GameObject("Main Camera",typeof(Camera),typeof(AudioListener)); cam.tag="MainCamera";
         gameCamera=cam.GetComponent<Camera>();gameCamera.orthographic=true;gameCamera.orthographicSize=5;gameCamera.cullingMask=1<<29;
         cameraOrigin=new Vector3(0,0,-10);cam.transform.position=cameraOrigin;gameCamera.backgroundColor=new Color(.025f,.035f,.09f);
+        scenery=new GameObject("Battlefield scenery").transform;
+        scenery.SetParent(world,false);
         var bg=Resources.Load<Sprite>("Battlefield");
-        if(bg) { var b=Render("Twilight Valley",bg,Vector3.zero,Color.white,-20); b.transform.localScale=new Vector3(17.78f/bg.bounds.size.x,10/bg.bounds.size.y,1); }
+        if(bg) { var b=Render("Twilight Valley",bg,Vector3.zero,Color.white,-20,scenery); b.transform.localScale=new Vector3(17.78f/bg.bounds.size.x,10/bg.bounds.size.y,1); }
         LoadHeroProfile(); LoadWizard(); CreateWizard(); CreateUi(); CreateAudio(); CreateStars(); InitializeCloud(); ShowMenu();
     }
 
@@ -90,7 +92,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     }
     void CreateStars() {
         for(int i=0;i<22;i++) {var p=new Vector3(UnityEngine.Random.Range(-8.5f,5.8f),UnityEngine.Random.Range(-1.4f,3.7f),0);
-            var s=Shape("Ambient firefly",world,p,Vector3.one*UnityEngine.Random.Range(.025f,.055f),new Color(.55f,.8f,1,.55f),-3);
+            var s=Shape("Ambient firefly",scenery,p,Vector3.one*UnityEngine.Random.Range(.025f,.055f),new Color(.55f,.8f,1,.55f),-3);
             effects.Add(new Visual{root=s.transform,sprite=s,time=0,life=10000,velocity=new Vector3(.015f,.025f,0),scale=s.transform.localScale});}
     }
 
@@ -110,16 +112,19 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     public void StartRun() {
         if(overlay)Destroy(overlay); ClearBattle();State=Phase.Battle;Paused=false;Time.timeScale=1;
         hudRoot.gameObject.SetActive(true); random=dailyMode?new System.Random(dailySeed):new System.Random();
-        Wave=0;Score=Kills=0;Health=1000;Mana=100;elapsed=0;damageMultiplier=1;attackInterval=.85f;manaRegen=6;extraChains=0;upgradedIce=false;targetX=Gate;
+        ResetRescue();Wave=0;Score=Kills=0;Health=1000;Mana=100;elapsed=0;damageMultiplier=1;attackInterval=.85f;manaRegen=6;extraChains=0;upgradedIce=false;targetX=Gate;
         if(!dailyMode){damageMultiplier+=PlayerPrefs.GetInt("RB.ForgeDamage",0)*.08f;manaRegen+=PlayerPrefs.GetInt("RB.ForgeMana",0);attackInterval*=Mathf.Pow(.93f,PlayerPrefs.GetInt("RB.ForgeSpeed",0));}
         gateGuard=0;PrepareHeroRun();Array.Clear(cooldown,0,3);autoClock=.4f;BeginWave();RefreshHud();
     }
     void ClearBattle() {
+        ClearRescueActors();
+        ClearWaveEncounter();
         foreach(var e in enemies)if(e.root)Destroy(e.root);enemies.Clear();
         foreach(var s in shots)if(s.root)Destroy(s.root.gameObject);shots.Clear();
     }
     public void BeginWave() {
         Wave++;State=Phase.Battle;toSpawn=Wave==TotalWaves?5:5+Wave*2;waveSpawned=0;spawnClock=1.4f;
+        PrepareWaveEncounter();
         tip.text=Wave==TotalWaves?"NOX XUẤT HIỆN — GIỮ CỔNG THÀNH!":"ĐỢT "+Wave+"  •  Chuẩn bị phòng thủ";
         StartCoroutine(ClearTipAfter(3));
     }
@@ -132,12 +137,12 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         float dt=Mathf.Min(Time.deltaTime,.05f);elapsed+=dt;Mana=Mathf.Min(100,Mana+manaRegen*dt);
         for(int i=0;i<3;i++){cooldown[i]=Mathf.Max(0,cooldown[i]-dt);runeCooldown[i]=Mathf.Max(0,runeCooldown[i]-dt);}
         HandleInput();spawnClock-=dt;
-        if(toSpawn>0 && spawnClock<=0) {int kind=ChooseEnemyKind();Spawn(kind);toSpawn--;waveSpawned++;spawnClock=Mathf.Max(.48f,1.5f-Wave*.08f);}
-        TickEnemies(dt);TickShots(dt);TickEffects(dt);
+        if(toSpawn>0 && spawnClock<=0) {SpawnWaveEnemy();toSpawn--;waveSpawned++;spawnClock=Mathf.Max(.48f,1.5f-Wave*.08f);}
+        TickRescue(dt);TickWaveEncounter();TickEnemies(dt);TickShots(dt);TickEffects(dt);
         autoClock-=dt;if(autoClock<=0) {var target=PickTarget();if(target!=null){Shoot(target);autoClock=attackInterval;}else autoClock=.1f;}
         hitFlash=Mathf.Max(0,hitFlash-dt);shake=Mathf.Max(0,shake-dt*2);
         gameCamera.transform.position=cameraOrigin+(Vector3)UnityEngine.Random.insideUnitCircle*shake*.07f;
-        if(Health<=0)EndRun(false);else if(toSpawn==0 && enemies.Count==0 && shots.Count==0){if(Wave>=TotalWaves)EndRun(true);else ShowUpgrades();}
+        if(Health<=0)EndRun(false);else if(!RescueInProgress && dormantEnemies.Count==0 && toSpawn==0 && enemies.Count==0 && shots.Count==0){if(Wave>=TotalWaves)EndRun(true);else ShowUpgrades();}
         RefreshHud();
     }
     void LateUpdate() {if(State!=Phase.Battle && !Paused)TickEffects(Time.deltaTime);}
@@ -152,15 +157,17 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         if(Touchscreen.current!=null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame){screen=Touchscreen.current.primaryTouch.position.ReadValue();click=true;}
         if(click && screen.y>Screen.height*.22f && screen.y<Screen.height*.85f && !overlay) {
             Vector3 p;if(arMode){if(!TryArScreenToGame(screen,out p))return;}else p=gameCamera.ScreenToWorldPoint(new Vector3(screen.x,screen.y,10));
+            if(mirrorSpell>=0 && Vector2.Distance(mirrorFrame.position,p)<.8f){FocusMirror();return;}
             var e=enemies.OrderBy(n=>Vector2.Distance(n.root.transform.position,p)).FirstOrDefault();
-            if(e!=null && Vector2.Distance(e.root.transform.position+Vector3.up*.4f,p)<1.5f){targetX=e.root.transform.position.x;Ring(e.root.transform.position+Vector3.up*.3f,.8f,new Color(1,.8f,.3f));}
+            if(e!=null && Vector2.Distance(e.root.transform.position+Vector3.up*.4f,p)<1.5f){mirrorFocused=e==mirrorBearer && mirrorSpell>=0;targetX=e.root.transform.position.x;Ring(e.root.transform.position+Vector3.up*.3f,.8f,new Color(1,.8f,.3f));}
         }
     }
     Enemy PickTarget() {
+        if(mirrorFocused && mirrorBearer!=null && mirrorBearer.alive)return mirrorBearer;
         if(enemies.Count==0)return null;
-        return enemies.OrderBy(e=>Mathf.Abs(e.root.transform.position.x-targetX)).ThenByDescending(e=>e.root.transform.position.x).FirstOrDefault();
+        return enemies.OrderByDescending(e=>RescueInProgress && e.pursuer).ThenBy(e=>Mathf.Abs(e.root.transform.position.x-targetX)).ThenByDescending(e=>e.root.transform.position.x).FirstOrDefault();
     }
-    void Spawn(int kind) {
+    Enemy Spawn(int kind) {
         var root=new GameObject(kind==3?"Nox - Boss":kind==2?"Brum - Golem":kind==1?"Pip - Bat":"Mochi - Slime");root.transform.SetParent(world,false);
         root.transform.position=new Vector3(-9.5f,kind==1?Ground+1.55f:Ground,0);
         var art=new GameObject("Animated body").transform;art.SetParent(root.transform,false);
@@ -187,7 +194,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         AttachAnimatedEnemy(e);e.scale=art.localScale;e.baseSpeed=e.speed;
         var bar=Shape("Health track",root.transform,new Vector3(0,kind>=2?kind==3?2.8f:1.85f:1.15f,0),new Vector3(kind==3?1.8f:.8f,.065f,1),new Color(.1f,.06f,.17f),11,false);
         var fill=Shape("Health",bar.transform,new Vector3(0,0,-.01f),Vector3.one,new Color(.82f,.3f,.68f),12,false);e.hp=fill.transform;
-        root.AddComponent<BoxCollider2D>().size=new Vector2(1,1.5f);enemies.Add(e);
+        root.AddComponent<BoxCollider2D>().size=new Vector2(1,1.5f);enemies.Add(e);return e;
     }
     void Eyes(Transform parent,float y,float spacing,Color color,int order) {
         for(int s=-1;s<=1;s+=2){Shape("Glowing eye",parent,new Vector3(s*spacing,y,0),new Vector3(.105f,.16f,1),color,order);Shape("Eye glint",parent,new Vector3(s*spacing-.015f,y+.035f,0),new Vector3(.035f,.045f,1),Color.white,order+1);}
@@ -195,11 +202,26 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     void TickEnemies(float dt) {
         foreach(var e in enemies.ToArray()) {
             if(!e.alive)continue;bool frozen=elapsed<e.frozenUntil;bool attacking=e.root.transform.position.x>=Gate;
-            if(e.animator)e.animator.SetState(attacking?"attack":elapsed<e.hitUntil?"hurt":"walk",frozen?new Color(.45f,.85f,1):Color.white);
+            bool distracted=DistractNox(e);
+            if(e.animator)e.animator.SetState(distracted?"idle":attacking?"attack":elapsed<e.hitUntil?"hurt":"walk",frozen?new Color(.45f,.85f,1):Color.white);
             if(elapsed<e.burnUntil){e.burnTick-=dt;if(e.burnTick<=0){e.burnTick=.5f;Damage(e,6*damageMultiplier,spellColors[0]);if(!e.alive)continue;}}
             float t=elapsed*5+e.seed;float factor=frozen?.22f:1;
-            if(e.root.transform.position.x<Gate)e.root.transform.position+=Vector3.right*e.speed*factor*dt;
-            else {e.attackClock-=dt;if(e.attackClock<=0){Health=Mathf.Max(0,Health-(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12)*(1-gateGuard));hurtUntil=Time.unscaledTime+.35f;e.attackClock=1.2f;shake=.4f;Play(gateSound,.3f);Floating("CỔNG -"+(e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12),new Vector3(6.5f,.5f,0),new Color(1,.4f,.4f));}}
+            if(!TickPursuer(e,dt,factor) && !distracted){
+                if(!attacking)e.root.transform.position+=Vector3.right*e.speed*factor*dt;
+                else {
+                    e.attackClock-=dt;
+                    if(e.attackClock<=0){
+                        e.attackClock=1.2f;
+                        if(!BlockNoxAttack(e)){
+                            int damage=e.kind==3?75:e.kind>=7?30:e.kind>=4?18:e.kind==2?30:12;
+                            Health=Mathf.Max(0,Health-damage*(1-gateGuard));
+                            hurtUntil=Time.unscaledTime+.35f;shake=.4f;Play(gateSound,.3f);
+                            Floating("CỔNG -"+damage,new Vector3(6.5f,.5f,0),new Color(1,.4f,.4f));
+                        }
+                    }
+                }
+            }
+            if(!e.alive)continue;
             e.art.localPosition=new Vector3(0,e.kind==1?Mathf.Sin(t*1.4f)*.15f:e.kind==0?Mathf.Abs(Mathf.Sin(t))*.12f:Mathf.Sin(t)*.025f,0);
             e.art.localScale=e.scale*(1+(e.kind==0?.065f:.025f)*Mathf.Sin(t));
             if(!e.animator)e.body.color=frozen?new Color(.2f,.68f,.85f):e.kind>=2?new Color(.24f,.22f,.38f):new Color(.16f,.08f,.29f);
@@ -231,8 +253,28 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
         if(wizardClips.TryGetValue(wizardClip,out var frames)&&frames.Length>0){int frame=(int)(animationClock*(next=="attack"?7:5));if(next=="attack"||next=="defeat"||next=="hurt")frame=Mathf.Min(frame,frames.Length-1);else frame%=frames.Length;wizard.sprite=frames[frame];wizard.sharedMaterial=TextureMaterial(wizard.sprite.texture);}
     }
     void Damage(Enemy e,float damage,Color color) {
-        if(!e.alive)return;e.hitUntil=elapsed+.18f;e.health-=damage;if(Time.unscaledTime-lastHitSound>.09f){Play(hitSound,.18f);lastHitSound=Time.unscaledTime;}Floating(Mathf.CeilToInt(damage).ToString(),e.root.transform.position+Vector3.up*(e.kind>=2?1.8f:1),color);
-        if(e.health<=0){e.alive=false;Score+=e.kind==3?1000:e.kind==2?100:e.kind==1?60:40;Kills++;Mana=Mathf.Min(100,Mana+3);Burst(e.root.transform.position+Vector3.up*.5f,new Color(.66f,.3f,1),12,.9f);enemies.Remove(e);if(e.animator){e.animator.SetState("death",Color.white);Destroy(e.root,.8f);}else Destroy(e.root);}
+        if(!e.alive)return;
+        bool guardedMirror=e==mirrorBearer && !mirrorUsed;
+        if(guardedMirror)damage*=.55f;
+        e.hitUntil=elapsed+.18f;e.health-=damage;
+        if(guardedMirror && runeCasting)e.health=Mathf.Max(1,e.health);
+        if(Time.unscaledTime-lastHitSound>.09f){Play(hitSound,.18f);lastHitSound=Time.unscaledTime;}
+        Floating(Mathf.CeilToInt(damage).ToString(),e.root.transform.position+Vector3.up*(e.kind>=2?1.8f:1),color);
+        if(e.health>0 || TryFeignDeath(e))return;
+        Vector3 impact=e.root.transform.position+Vector3.up*.6f;
+        DefeatEnemy(e);
+        if(e==mirrorBearer){
+            if(mirrorSpell>=0)ShatterMirror(impact);
+            else if(!mirrorUsed)ResolveMirror("Kẻ trộm nét vẽ đã bị hạ.");
+        }
+    }
+    void DefeatEnemy(Enemy e) {
+        e.alive=false;Score+=e.kind==3?1000:e.kind==2?100:e.kind==1?60:40;Kills++;
+        Mana=Mathf.Min(100,Mana+3);
+        Burst(e.root.transform.position+Vector3.up*.5f,new Color(.66f,.3f,1),12,.9f);
+        enemies.Remove(e);
+        if(e.animator && e.animator.enabled){e.animator.SetState("death",Color.white);Destroy(e.root,.8f);}
+        else Destroy(e.root);
     }
     void Burst(Vector3 p,Color color,int count,float speed) {
         count=highEffects?count:Mathf.Max(3,count/3);for(int i=0;i<count;i++){var s=Shape("Spell particle",world,p,new Vector3(.06f,.13f,1),color,20);s.transform.rotation=Quaternion.Euler(0,0,UnityEngine.Random.Range(0,360));
@@ -283,7 +325,7 @@ public sealed partial class RuneBastionGame : MonoBehaviour {
     // Used by the editor smoke check, exercising real combat paths rather than mock results.
     public void VerificationSpawn() {Spawn(0);Spawn(4);Spawn(7);foreach(var e in enemies)e.root.transform.position+=Vector3.right*5;}
 #if UNITY_EDITOR
-    public void VerificationResolveWave(){while(toSpawn>0){Spawn(ChooseEnemyKind());waveSpawned++;toSpawn--;}foreach(var e in enemies.ToArray())Damage(e,100000,Color.white);foreach(var s in shots)if(s.root)Destroy(s.root.gameObject);shots.Clear();}
+    public void VerificationResolveWave(){if(rescue==Rescue.Choice)ChooseRescue(false);while(toSpawn>0){SpawnWaveEnemy();waveSpawned++;toSpawn--;}foreach(var e in enemies.ToArray())Damage(e,100000,Color.white);if(dormantEnemies.Count>0&&!bellUsed)RingTheBell();foreach(var s in shots)if(s.root)Destroy(s.root.gameObject);shots.Clear();}
     public void VerificationLose(){Health=0;}
     public void VerificationHome(){ShowMenu();}
 #endif
